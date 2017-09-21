@@ -1,3 +1,4 @@
 [submodule "classifier"]
 	path = classifier
 	url = https://github.com/wison27/classifier
+	branch = master
