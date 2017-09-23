@@ -37,7 +37,7 @@ public class Main {
 			return 0;
 		}
 	});
-	private static String [] robots;
+	private static Robots [] robots;
 	
 	public static void salvarTXT(String texto, String nome) throws IOException{
 		//essa parte remove o http:// https:// da url (tava dando erro na interpretacao do //)
@@ -96,7 +96,7 @@ public class Main {
 		//arraylist temporario para armazenar as strings
 		ArrayList <String> temp = new ArrayList <String>();
 		//codigo do jsup para extrair as urls
-		//parce do html da pagina baixada anteriormente
+		//parse do html da pagina baixada anteriormente
 		Document doc = Jsoup.parse(html);
 		//selecionado os atributos <a>
 		org.jsoup.select.Elements links = doc.select("a");
@@ -117,41 +117,25 @@ public class Main {
 		for(int i=0; i</*urls.length*/ 1; i++) {
 			URL url = new URL("https://pt.wikipedia.org/wiki/Rorschach_(Watchmen)"/*urls[i]*/);
 			URLConnection connection = (URLConnection)  url.openConnection();
-
 			connection.connect();
+			//pega o tipo de conteudo da url
+			String contentType = connection.getContentType();
+			
+			//bloco que pega o title
 			InputStream inp = connection.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(inp, StandardCharsets.UTF_8));
 			Scanner scanner = new Scanner(br);
-			
 			scanner.useDelimiter("</title>");
-			//	System.out.println(scanner.next());
 			String title = scanner.next();
 			String [] aux = title.split("<title>");
 			title = aux[1];
-			System.out.println(title);
-			//System.out.println(title.equalsIgnoreCase("The world's leading software development platform · GitHub"));
-			String contentType = connection.getContentType();
 			
-			
-			
-			//MODIFICAR ESSA PARTE
-			
-			//Document doc = Jsoup.parse(head);
-			
-			
-			
-		
-			//Element ancora = doc.select("title").first();
-			//String title = ancora.html();
-			System.out.println(contentType + "\n\n\n\n");
-			//System.out.println(line);
-		
 		}
 		
 	}
 	
 	public static void main(String [] args) throws IOException{
-		/*for(int i = 0; i<sites.length; i++)fronteira.add(new Link(0, sites[i]));
+		for(int i = 0; i<sites.length; i++)fronteira.add(new Link(0, sites[i]));
 		URLConnection connection = null;
 		String content = null;
 		String temp = "";
@@ -168,8 +152,7 @@ public class Main {
 			}catch (Exception e){
 				e.printStackTrace();
 			}
-		}*/
-		adicionarUrlFronteira("");
+		}
 	}
 }
 	
