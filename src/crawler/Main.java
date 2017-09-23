@@ -11,6 +11,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -111,19 +113,23 @@ public class Main {
 	//
 	public static void adicionarUrlFronteira(String html) throws IOException{
 		int peso;
-		String [] urls = parse(html);
-		for(int i=urls.length; i<1; i++) {
-			URL url = new URL(urls[i]);
-			HttpURLConnection connection = (HttpURLConnection)  url.openConnection();
-			connection.setRequestMethod("HEAD");
+		//String [] urls = parse(html);
+		for(int i=0; i</*urls.length*/ 1; i++) {
+			URL url = new URL("https://pt.wikipedia.org/wiki/Rorschach_(Watchmen)"/*urls[i]*/);
+			URLConnection connection = (URLConnection)  url.openConnection();
 
 			connection.connect();
+			InputStream inp = connection.getInputStream();
+			BufferedReader br = new BufferedReader(new InputStreamReader(inp, StandardCharsets.UTF_8));
+			Scanner scanner = new Scanner(br);
 			
-			//Scanner scanner = new Scanner(inp);
-			//System.out.println(inp.equals(null));
-			//scanner.useDelimiter("\\Z");
-			//System.out.println(scanner.hasNext());
-			//String head = scanner.next();
+			scanner.useDelimiter("</title>");
+			//	System.out.println(scanner.next());
+			String title = scanner.next();
+			String [] aux = title.split("<title>");
+			title = aux[1];
+			System.out.println(title);
+			//System.out.println(title.equalsIgnoreCase("The world's leading software development platform · GitHub"));
 			String contentType = connection.getContentType();
 			
 			
@@ -145,7 +151,7 @@ public class Main {
 	}
 	
 	public static void main(String [] args) throws IOException{
-		for(int i = 0; i<sites.length; i++)fronteira.add(new Link(0, sites[i]));
+		/*for(int i = 0; i<sites.length; i++)fronteira.add(new Link(0, sites[i]));
 		URLConnection connection = null;
 		String content = null;
 		String temp = "";
@@ -162,7 +168,8 @@ public class Main {
 			}catch (Exception e){
 				e.printStackTrace();
 			}
-		}
+		}*/
+		adicionarUrlFronteira("");
 	}
 }
 	
