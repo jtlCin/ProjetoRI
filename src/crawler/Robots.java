@@ -3,8 +3,8 @@ package crawler;
 import java.util.ArrayList;
 
 public class Robots {
-	private static String [] disallow;
-	private static String [] allow;
+	private static  String [] disallow;
+	private static  String [] allow;
 	private String siteUrl;
 	
 	private static void  extractAllowDisallow(String robotos) {
@@ -27,10 +27,11 @@ public class Robots {
 			}
 			cont +=1;
 		}
-		temp = (String[]) dl.toArray();	
-		disallow = temp;
-		temp = (String[]) al.toArray();	
-		allow = temp;
+			
+		disallow = new String[dl.size()];
+		dl.toArray(disallow);
+		allow = new String[al.size()];
+		al.toArray(allow);
 		
 	}
 	

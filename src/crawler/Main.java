@@ -24,9 +24,9 @@ import org.jsoup.nodes.Element;
 
 
 public class Main {
-	
+	//REMOVER cea
 	//array que salva as urls iniciais
-	private static String [] sites = {"http://www.cea.com.br", "http://www.lojasrenner.com.br", "https://www.dafiti.com.br", "https://www.riachuelo.com.br",
+	private static String [] sites = {"http://www.lojasrenner.com.br", "https://www.dafiti.com.br", "https://www.riachuelo.com.br",
 									  "http://www.marisa.com.br", "http://www.extra.com.br", "https://www.mercadolivre.com.br", "http://www.zattini.com.br", 
 									  "http://www.netshoes.com.br", "https://www.submarino.com.br"};
 	//criacao da fronteira, uma lista prioritaria baseada na variavel peso
@@ -57,33 +57,19 @@ public class Main {
 		fw.close();
 		bw.close();
 	}
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//MODIFICAR ESSA PARTE PARA PODER SABER DE QUE SITE E O ROBOTS.TXT
-	//
-	//
-	//
-	//
-	//
-	//
-	//
+
 	public static void getRobots(){
+		robots = new Robots[sites.length];
 		URLConnection connection = null;
 		String content = null;
-		String temp = "";
-		for(int i = 0; i<sites.length; i++){
+		for(int i=0; i<robots.length; i++){
 			try{
 				connection = new URL(sites[i] + "\robots.txt").openConnection();
 				Scanner scanner = new Scanner(connection.getInputStream());
 				//le a pagina ate o final (delimitador \\Z)
 				scanner.useDelimiter("\\Z");
 				content = scanner.next();
-				temp += content;				
+				robots[i] = new Robots(sites[i], content);				
 			}catch (MalformedURLException e){
 				e.printStackTrace();
 			}catch (IOException e){
@@ -105,17 +91,16 @@ public class Main {
 			//absUrl pega os links absolutos
 		    temp.add(link.absUrl("href"));
 		}
-		return (String[]) temp.toArray();
+		String [] a = new String[temp.size()];
+		temp.toArray(a);
+		return a;
 	}
-	//
-	//INSERIR AQUI A VERIFICACAO DOS ROBOTS , DE ALGUMAS PALAVRAS CHAVE EPARA NOTA E INSERCAO NA FRONTEIRA
-	//a ideia e que essa funcao receba um array de strings extraidas da ultima pagina visitada da fronteira e rankeias
-	//
+	
 	public static void adicionarUrlFronteira(String html) throws IOException{
 		int peso;
-		//String [] urls = parse(html);
-		for(int i=0; i</*urls.length*/ 1; i++) {
-			URL url = new URL("https://pt.wikipedia.org/wiki/Rorschach_(Watchmen)"/*urls[i]*/);
+		String [] urls = parse(html);
+		for(int i=0; i<urls.length ; i++) {
+			URL url = new URL(urls[i]);
 			URLConnection connection = (URLConnection)  url.openConnection();
 			connection.connect();
 			//pega o tipo de conteudo da url
