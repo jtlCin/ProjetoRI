@@ -162,7 +162,11 @@ public class MainLargura {
 	
 	public static void main(String [] args) throws IOException{
 		//getRobots();
-		for(int i = 0; i<sites.length; i++)fronteira.add(new Link(0, sites[i]));
+		int lastModified = cal.get(Calendar.DAY_OF_WEEK);
+		for(int i = 0; i<sites.length; i++){
+			fronteira.add(new Link(0, sites[i]));
+			ctrlFronteira.put(sites[i], lastModified);
+		}
 		URLConnection connection = null;
 		String content = null;
 		String temp = "";
