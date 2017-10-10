@@ -32,7 +32,7 @@ public class Main {
 	private static String [] negativos = {"mochila", "bateria", "motorola", "snapdragon", "smartphone", "tv", "playstation", "console", "categoria", "Eletrodomesticos", "Eletroportateis",
 										  "Lavadora", "Roupas", "Electrolux", "Fritadeira", "oleo", "Britania", "Android", "galaxy", "bebes", "Cadeira", "Conforto", "Multifuncional",
 										  "Cartucho", "Tinta", "box", "busca", "Geladeira", "Portas", "Freezer", "Pneu", "Pirelli", "aro", "Travel", "Street", "Suporte", "Maleta", "dicas",
-										  "institucional", "caneca", "case", "tablet", "volante", "ps3", "ps4", "WindowsPhone", "MOUSE", "Calculadora"};
+										  "institucional", "caneca", "case", "tablet", "volante", "ps3", "ps4", "WindowsPhone", "MOUSE", "Calculadora", "user", "usuario", "carrinho", "sacola", "cart"};
 	
 	//REMOVER cea
 	//array que salva as urls iniciais
