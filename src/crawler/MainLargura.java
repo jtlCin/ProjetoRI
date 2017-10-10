@@ -139,20 +139,21 @@ public class MainLargura {
 			BufferedReader br = new BufferedReader(new InputStreamReader(inp, StandardCharsets.UTF_8));
 			Scanner scanner = new Scanner(br);
 			scanner.useDelimiter("</title>");
-			String title = scanner.next();
-			String [] aux = title.split("<title>");
-			if(aux.length>=2)title = aux[1];
-			else title = " ";
-			titleTemp = title.toUpperCase();
-			urlTemp = urls[i].toUpperCase();
-			//verificar dominio, verificar robots
-			if(verificarDominio(urls[i]) /*&& !verificarRobots(urlTemp)*/ && (contentType.equalsIgnoreCase("text/html") || contentType.equalsIgnoreCase("text/html; charset=utf-8"))){	
+			if(scanner.hasNext()){
+				String title = scanner.next();
+				String [] aux = title.split("<title>");
+				if(aux.length>=2)title = aux[1];
+				else title = " ";
+				titleTemp = title.toUpperCase();
+				urlTemp = urls[i].toUpperCase();
+				//verificar dominio, verificar robots
+				if(verificarDominio(urls[i]) /*&& !verificarRobots(urlTemp)*/ && (contentType.equalsIgnoreCase("text/html") || contentType.equalsIgnoreCase("text/html; charset=utf-8"))){	
 					fronteira.add(new Link(peso, urls[i]));
 					ctrlFronteira.put(urls[i], lastModified);
 					
 				}
 			}
-		
+		}
 		}catch(Exception e){
 			e.printStackTrace();
 		}
