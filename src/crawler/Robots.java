@@ -17,10 +17,10 @@ public class Robots {
 				cont +=1;
 				while(cont<temp.length){
 					if((temp[cont].charAt(0)!='#' || temp[cont].charAt(0)!='\n') && !(temp[cont].substring(0, 11).equalsIgnoreCase("User-agent:")) && temp[cont].charAt(0)=='D') {
-						dl.add(temp[cont].substring(13));
+						dl.add(temp[cont].substring(11));
 					}
 					else if ((temp[cont].charAt(0)!='#' || temp[cont].charAt(0)!='\n') && !(temp[cont].substring(0, 11).equalsIgnoreCase("User-agent:")) && temp[cont].charAt(0)=='A') {
-						al.add(temp[cont].substring(13));
+						al.add(temp[cont].substring(11));
 					}
 					cont+=1;
 				}
@@ -43,6 +43,11 @@ public class Robots {
 		return this.siteUrl;
 	}
 	public boolean checkDisallow(String url) {
+		for(int i = 0; i<disallow.length; i++){
+			String temp = siteUrl + disallow[i];
+			if(temp.length()<url.length())
+			if(url.contains(temp.toUpperCase())) return true;
+		}
 		return false;
 	}
 	public boolean checkAllow(String url) {
