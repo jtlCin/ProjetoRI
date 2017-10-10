@@ -149,28 +149,16 @@ public class Main {
 			BufferedReader br = new BufferedReader(new InputStreamReader(inp, StandardCharsets.UTF_8));
 			Scanner scanner = new Scanner(br);
 			scanner.useDelimiter("</title>");
-			String title = scanner.next();
-			String [] aux = title.split("<title>");
-			if(aux.length>=2)title = aux[1];
-			else title = " ";
-			titleTemp = title.toUpperCase();
-			urlTemp = urls[i].toUpperCase();
-			//verificar dominio, verificar robots
-			if(verificarDominio(urls[i]) /*&& !verificarRobots(urlTemp)*/ && (contentType.equalsIgnoreCase("text/html") || contentType.equalsIgnoreCase("text/html; charset=utf-8"))){	
-				if(!ctrlFronteira.containsKey(urls[i])){
-					for(int ii = 0; ii<positivos.length; ii++){
-						if(urlTemp.contains(positivos[ii].toUpperCase()))peso++;
-						if(titleTemp.contains(positivos[ii].toUpperCase()))peso+=2;
-					}
-					for(int ii = 0; ii<negativos.length; ii++){
-						if(urlTemp.contains(negativos[ii].toUpperCase()))peso--;
-						if(titleTemp.contains(negativos[ii].toUpperCase()))peso-=5;
-					}
-				}
-
-				else{
-					int temp = (int) ctrlFronteira.get(urls[i]);
-					if(!(temp==lastModified)){
+			if(scanner.hasNext()){
+				String title = scanner.next();
+				String [] aux = title.split("<title>");
+				if(aux.length>=2)title = aux[1];
+				else title = " ";
+				titleTemp = title.toUpperCase();
+				urlTemp = urls[i].toUpperCase();
+				//verificar dominio, verificar robots
+				if(verificarDominio(urls[i]) /*&& !verificarRobots(urlTemp)*/ && (contentType.equalsIgnoreCase("text/html") || contentType.equalsIgnoreCase("text/html; charset=utf-8"))){	
+					if(!ctrlFronteira.containsKey(urls[i])){
 						for(int ii = 0; ii<positivos.length; ii++){
 							if(urlTemp.contains(positivos[ii].toUpperCase()))peso++;
 							if(titleTemp.contains(positivos[ii].toUpperCase()))peso+=2;
@@ -180,11 +168,25 @@ public class Main {
 							if(titleTemp.contains(negativos[ii].toUpperCase()))peso-=5;
 						}
 					}
-				}
-				if(peso>=0){
-					fronteira.add(new Link(peso, urls[i]));
-					ctrlFronteira.put(urls[i], lastModified);
+
+					else{
+						int temp = (int) ctrlFronteira.get(urls[i]);
+						if(!(temp==lastModified)){
+							for(int ii = 0; ii<positivos.length; ii++){
+								if(urlTemp.contains(positivos[ii].toUpperCase()))peso++;
+								if(titleTemp.contains(positivos[ii].toUpperCase()))peso+=2;
+							}
+							for(int ii = 0; ii<negativos.length; ii++){
+								if(urlTemp.contains(negativos[ii].toUpperCase()))peso--;
+								if(titleTemp.contains(negativos[ii].toUpperCase()))peso-=5;
+							}
+						}
+					}
+					if(peso>=0){
+						fronteira.add(new Link(peso, urls[i]));
+						ctrlFronteira.put(urls[i], lastModified);
 					
+					}
 				}
 			}
 		}
