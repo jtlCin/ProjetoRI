@@ -8,6 +8,12 @@ public class Node {
 	private byte freqByte;
 	private byte numDocByte;
 	 
+	public Node (String nome, byte numDoc, byte freq){
+		this.nome = nome;
+		this.numDocByte = numDoc;
+		this.freqByte = freq;
+		this.next = null;
+	}
 	public Node (int num, int freq){
 		this.nome = null;
 		this.numDoc = num;
@@ -54,5 +60,13 @@ public class Node {
 	public void setNext(Node n){
 		if(this.next==null) this.next = n;
 		else this.next.setNext(n);
+	}
+	
+	public Node getLast(){
+		if(this.next==null){
+			return this;
+		}
+		else return	this.next.getLast();
+
 	}
 }
