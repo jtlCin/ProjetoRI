@@ -202,13 +202,16 @@ public class ArquivoInvertido {
 			while (s < tempHash.size()) {
 				//usa a key para pegar o valor no hashtable temporario
 				String key = (String) names.nextElement();
-				byte tempFreq = (byte) tempHash.get(key);
+				int tempFreqa = (int) tempHash.get(key);
+				byte tempFreq = (byte) tempFreqa;
 				//se o hashtable principal já contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
 				//com as informacoes do hashtable temporario, ie insere no final da lista
 				if (arquivo.containsKey(key)) {
 					Node tempNode = (Node) arquivo.get(key);
 					Node tempLast = tempNode.getLast();
-					byte tempDistancia = (byte) (i-(tempNode.getNumDocByte()+tempLast.getNumDocByte()));
+					byte tempDistancia;
+					if(tempNode!=tempLast) tempDistancia = (byte) (i-(tempNode.getNumDocByte()+tempLast.getNumDocByte()));
+					else tempDistancia = (byte) (i - tempNode.getNumDocByte());
 					tempNode.setNext(new Node(tempDistancia, tempFreq));
 					arquivo.put(key, tempNode);
 				//caso o hashtable principal nao possua a key a insere como head 
