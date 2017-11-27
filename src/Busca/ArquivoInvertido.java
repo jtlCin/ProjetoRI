@@ -1,8 +1,10 @@
 package Busca;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -63,7 +65,7 @@ public class ArquivoInvertido {
 		}
 	}
 
-	public ArquivoInvertido(boolean select) {
+	public ArquivoInvertido(boolean select) throws IOException {
 		if (!select) {
 			// tenta ler o arquivo de lista invertida
 			try {
@@ -161,6 +163,32 @@ public class ArquivoInvertido {
 				listaArquivos = new File("Teste").list();
 				try {
 					bancoPalavrasByte(listaArquivos);
+					FileWriter fw = new FileWriter("aic");
+					BufferedWriter bw = new BufferedWriter(fw);
+					//File arquivoInvertido = new File("aic");
+					FileWriter fhw = new FileWriter("haic");
+					BufferedWriter bhw = new BufferedWriter(fhw);
+					int s = 0;
+					//pega todas as keys do hashtable temporario
+					Enumeration names = arquivo.keys();
+					while(s<arquivo.size()){
+						int cont = 1;
+						String key = (String) names.nextElement();
+						Node tempNode = (Node) arquivo.get(key);
+						bw.write(tempNode.getNumDocByte());
+						bw.write(tempNode.getFreqByte());
+						bw.flush();
+						while(tempNode.hasNext()){
+							tempNode=tempNode.getNext();
+							bw.write(tempNode.getNumDocByte());
+							bw.write(tempNode.getFreqByte());
+							bw.flush();
+							cont++;
+						}
+						bhw.write(key + " " + cont + "\n");
+						bhw.flush();
+						s++;
+					}
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
