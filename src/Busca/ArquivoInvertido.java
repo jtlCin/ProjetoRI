@@ -154,6 +154,7 @@ public class ArquivoInvertido {
 						// frequencia do termo nesse documento
 						nodeTemp.setNext(new Node(tempNumDoc, tempFreq));
 						nodeTemp = nodeTemp.getNext();
+						qt--;
 					}
 				}
 				// caso o arquivo nao exista busca criar o arquivo
