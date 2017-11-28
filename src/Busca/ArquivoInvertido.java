@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class ArquivoInvertido {
 	private static Hashtable arquivo;
 
-	public ArquivoInvertido() {
+	public ArquivoInvertido() throws IOException {
 		// tenta ler o arquivo de lista invertida
 		try {
 			File arquivoInvertido = new File("ai");
@@ -58,6 +58,7 @@ public class ArquivoInvertido {
 			listaArquivos = new File("Teste").list();
 			try {
 				bancoPalavras(listaArquivos);
+				salvar();
 			} catch (FileNotFoundException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -111,6 +112,7 @@ public class ArquivoInvertido {
 				listaArquivos = new File("Teste").list();
 				try {
 					bancoPalavras(listaArquivos);
+					salvar();
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -290,6 +292,27 @@ public class ArquivoInvertido {
 
 	public Hashtable getArquivoInvertido() {
 		return this.arquivo;
+	}
+	
+	private void salvar() throws IOException{
+		FileWriter fw = new FileWriter("ai");
+		BufferedWriter bw = new BufferedWriter(fw);
+		int s = 0;
+		Enumeration names = this.arquivo.keys();
+		while(s<this.arquivo.size()){
+			String key = (String) names.nextElement();
+			String temp = "";
+			Node tempNode = (Node) arquivo.get(key);
+			temp += key + " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
+			while(tempNode.hasNext()){
+				tempNode = tempNode.getNext();
+				temp += " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
+			}
+			temp += "\n";
+			bw.write(temp);
+			s++;
+		}
+		
 	}
 
 }
