@@ -1,4 +1,4 @@
-package Busca;
+package busca;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Enumeration;
@@ -48,7 +48,7 @@ public class Main {
 		try{
 			File arquivoInvertido = new File("ai");
 			Scanner sc =  new Scanner(arquivoInvertido);
-			//ler enquanto tiver linha (cada linha representa uma lista de documentos/frequancia separados por espaço que contem o termo que aparece como 1 elemento da linha)
+			//ler enquanto tiver linha (cada linha representa uma lista de documentos/frequancia separados por espaï¿½o que contem o termo que aparece como 1 elemento da linha)
 			while(sc.hasNext()){
 				//vai salvar o ultimo node inserido para facilitar a insercao de novos nodes
  				Node nodeTemp;

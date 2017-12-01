@@ -1,4 +1,4 @@
-package Busca;
+package busca;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,15 +11,18 @@ import java.util.Hashtable;
 import java.util.Scanner;
 
 public class ArquivoInvertido {
-	private static Hashtable arquivo;
+	private static Hashtable arquivo = new Hashtable();
 
-	public ArquivoInvertido() throws IOException {
-		// tenta ler o arquivo de lista invertida
+	public ArquivoInvertido(boolean ehArquivo, String arquivoOuDiretorio) {
+		// tenta ler o arquivo de lista invertida se o boolean for true, se nao le os arquivo do diretorio passado 
 		try {
-			File arquivoInvertido = new File("ai");
+			if (!ehArquivo) {
+				throw new FileNotFoundException();
+			} //se passar eh arquivo
+			File arquivoInvertido = new File(arquivoOuDiretorio);
 			Scanner sc = new Scanner(arquivoInvertido);
 			// ler enquanto tiver linha (cada linha representa uma lista de
-			// documentos/frequancia separados por espaço que contem o termo
+			// documentos/frequancia separados por espaï¿½o que contem o termo
 			// que
 			// aparece como 1 elemento da linha)
 			while (sc.hasNext()) {
@@ -53,11 +56,11 @@ public class ArquivoInvertido {
 			}
 			// caso o arquivo nao exista busca criar o arquivo
 		} catch (FileNotFoundException e) {
-			String listaArquivos[];
-			// substituir a pasta paginas
-			listaArquivos = new File("Teste").list();
+			File[] listaArquivos;
+			//chegando aqui eh diretorio
+			listaArquivos = new File(arquivoOuDiretorio).listFiles();
 			try {
-				bancoPalavras(listaArquivos);
+				bancoPalavras(listaArquivos );
 				salvar();
 			} catch (FileNotFoundException e1) {
 				// TODO Auto-generated catch block
@@ -73,7 +76,7 @@ public class ArquivoInvertido {
 				File arquivoInvertido = new File("ai");
 				Scanner sc = new Scanner(arquivoInvertido);
 				// ler enquanto tiver linha (cada linha representa uma lista de
-				// documentos/frequancia separados por espaço que contem o termo
+				// documentos/frequancia separados por espaï¿½o que contem o termo
 				// que
 				// aparece como 1 elemento da linha)
 				while (sc.hasNext()) {
@@ -107,9 +110,9 @@ public class ArquivoInvertido {
 				}
 				// caso o arquivo nao exista busca criar o arquivo
 			} catch (FileNotFoundException e) {
-				String listaArquivos[];
+				File listaArquivos[];
 				// substituir a pasta paginas
-				listaArquivos = new File("Teste").list();
+				listaArquivos = new File("Teste").listFiles();
 				try {
 					bancoPalavras(listaArquivos);
 					salvar();
@@ -210,7 +213,7 @@ public class ArquivoInvertido {
 			//apaonta para a pagina salva no arquivo i.txt
 			File temp = new File("Teste\\" + i + ".txt");
 			Scanner tempScan = new Scanner(temp);
-			//Le toda a pagina salvano as linhas com espaços
+			//Le toda a pagina salvano as linhas com espaï¿½os
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
 			}
@@ -235,7 +238,7 @@ public class ArquivoInvertido {
 				String key = (String) names.nextElement();
 				int tempFreqa = (int) tempHash.get(key);
 				byte tempFreq = (byte) tempFreqa;
-				//se o hashtable principal já contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
+				//se o hashtable principal jï¿½ contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
 				//com as informacoes do hashtable temporario, ie insere no final da lista
 				if (arquivo.containsKey(key)) {
 					Node tempNode = (Node) arquivo.get(key);
@@ -256,12 +259,13 @@ public class ArquivoInvertido {
 		
 	}
 
-	public static void bancoPalavras(String[] listaArquivos) throws FileNotFoundException {
-		for (int i = 1; i <= listaArquivos.length; i++) {
+	public static void bancoPalavras(File[] listaArquivos) throws FileNotFoundException {
+		int i=0;
+		for (File temp : listaArquivos) {
+			i++;
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
-			File temp = new File("Teste\\" + i + ".txt");
 			Scanner tempScan = new Scanner(temp);
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
@@ -294,23 +298,31 @@ public class ArquivoInvertido {
 		return this.arquivo;
 	}
 	
-	private void salvar() throws IOException{
-		FileWriter fw = new FileWriter("ai");
-		BufferedWriter bw = new BufferedWriter(fw);
-		int s = 0;
-		Enumeration names = this.arquivo.keys();
-		while(s<this.arquivo.size()){
-			String key = (String) names.nextElement();
-			String temp = "";
-			Node tempNode = (Node) arquivo.get(key);
-			temp += key + " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
-			while(tempNode.hasNext()){
-				tempNode = tempNode.getNext();
-				temp += " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
+	private void salvar() {
+		FileWriter fw;
+		BufferedWriter bw;
+		try {
+			fw = new FileWriter("ai");
+			bw = new BufferedWriter(fw);
+		
+			int s = 0;
+			Enumeration names = this.arquivo.keys();
+			while(s<this.arquivo.size()){
+				String key = (String) names.nextElement();
+				String temp = "";
+				Node tempNode = (Node) arquivo.get(key);
+				temp += key + " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
+				while(tempNode.hasNext()){
+					tempNode = tempNode.getNext();
+					temp += " " + tempNode.getNumDoc() + " " + tempNode.getFreq();
+				}
+				temp += "\n";
+				bw.write(temp);
+				s++;
 			}
-			temp += "\n";
-			bw.write(temp);
-			s++;
+		} catch (IOException e) {
+			// System.out.println(e);
+			e.printStackTrace();
 		}
 		
 	}

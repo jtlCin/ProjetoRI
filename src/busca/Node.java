@@ -1,4 +1,4 @@
-package Busca;
+package busca;
 
 public class Node {
 	String nome;
