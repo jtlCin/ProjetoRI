@@ -42,7 +42,7 @@ public class ArquivoInvertido {
 				// arrayTemp[1] =
 				// primeiro documento em que o termo aparece, arrayTemp[2] =
 				// frequencia do termo nesse documento
-				nodeTemp = new Node(arrayTemp[0], Integer.parseInt(arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
+				nodeTemp = new Node(arrayTemp[0], (arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
 				// insere o head na hastable
 				arquivo.put(arrayTemp[0], nodeTemp);
 				// para cada um dos outros pares documento/frequencia,
@@ -50,7 +50,7 @@ public class ArquivoInvertido {
 				// eles no next do ultimo node inserido e seta o novo
 				// nodeTemp
 				for (int i = 3; i < arrayTemp.length; i += 2) {
-					nodeTemp.setNext(new Node(Integer.parseInt(arrayTemp[i]), Integer.parseInt(arrayTemp[i + 1])));
+					nodeTemp.setNext(new Node((arrayTemp[i]), Integer.parseInt(arrayTemp[i + 1])));
 					nodeTemp = nodeTemp.getNext();
 				}
 			}
@@ -96,7 +96,7 @@ public class ArquivoInvertido {
 					// arrayTemp[1] =
 					// primeiro documento em que o termo aparece, arrayTemp[2] =
 					// frequencia do termo nesse documento
-					nodeTemp = new Node(arrayTemp[0], Integer.parseInt(arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
+					nodeTemp = new Node(arrayTemp[0], (arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
 					// insere o head na hastable
 					arquivo.put(arrayTemp[0], nodeTemp);
 					// para cada um dos outros pares documento/frequencia,
@@ -104,7 +104,7 @@ public class ArquivoInvertido {
 					// eles no next do ultimo node inserido e seta o novo
 					// nodeTemp
 					for (int i = 3; i < arrayTemp.length; i += 2) {
-						nodeTemp.setNext(new Node(Integer.parseInt(arrayTemp[i]), Integer.parseInt(arrayTemp[i + 1])));
+						nodeTemp.setNext(new Node((arrayTemp[i]), Integer.parseInt(arrayTemp[i + 1])));
 						nodeTemp = nodeTemp.getNext();
 					}
 				}
@@ -127,7 +127,8 @@ public class ArquivoInvertido {
 				File arquivoInvertido = new File("aic");
 				//abre o arquivo com o head da lista
 				File arquivoInvertidoHead = new File("haic");
-				FileInputStream sc = new FileInputStream("aic");
+				// FileInputStream sc = new FileInputStream("aic");
+				Scanner sc = new Scanner(new FileInputStream("aic"));
 				Scanner hsc = new Scanner(arquivoInvertidoHead);
 				//enquanto existirem keys no head
 				while(hsc.hasNext()){
@@ -137,8 +138,8 @@ public class ArquivoInvertido {
 					//ler a quantidade de interacoes que vao ser lidas de dados dessa key
 					int qt = Integer.parseInt(temp[1]);
 					//le as infromacoes do head pra essa key no 
-					byte tempNumDoc = (byte) sc.read();
-					byte tempFreq = (byte) sc.read();
+					String tempNumDoc = sc.next();
+					int tempFreq = sc.nextInt();
 					Node nodeTemp = new Node(tempNumDoc, tempFreq);
 					arquivo.put(key, nodeTemp);
 					while (qt > 1) {
@@ -146,9 +147,9 @@ public class ArquivoInvertido {
 						// insercao
 						// de novos nodes
 						// ler a linha
-						tempNumDoc = (byte) sc.read();
+						tempNumDoc = sc.next();
 						// splita nos espacos
-						tempFreq = (byte) sc.read();
+						tempFreq = sc.nextInt();
 						// cria o head da lista, assume que se o termo esta no
 						// documento
 						// ele aparece em pelo menos uma pagina com uma frequancia,
@@ -164,11 +165,11 @@ public class ArquivoInvertido {
 				}
 				// caso o arquivo nao exista busca criar o arquivo
 			} catch (IOException e) {
-				String listaArquivos[];
+				File[] listaArquivos;
 				// substituir a pasta paginas
-				listaArquivos = new File("Teste").list();
+				listaArquivos = new File("Teste").listFiles();
 				try {
-					bancoPalavrasByte(listaArquivos);
+					bancoPalavras(listaArquivos);
 					FileWriter fw = new FileWriter("aic");
 					BufferedWriter bw = new BufferedWriter(fw);
 					//File arquivoInvertido = new File("aic");
@@ -181,13 +182,13 @@ public class ArquivoInvertido {
 						int cont = 1;
 						String key = (String) names.nextElement();
 						Node tempNode = (Node) arquivo.get(key);
-						bw.write(tempNode.getNumDocByte());
-						bw.write(tempNode.getFreqByte());
+						bw.write(tempNode.getNumDoc()+"");
+						bw.write(tempNode.getFreq()+"");
 						bw.flush();
 						while(tempNode.hasNext()){
 							tempNode=tempNode.getNext();
-							bw.write(tempNode.getNumDocByte());
-							bw.write(tempNode.getFreqByte());
+							bw.write(tempNode.getNumDoc()+"");
+							bw.write(tempNode.getFreq()+"");
 							bw.flush();
 							cont++;
 						}
@@ -203,66 +204,10 @@ public class ArquivoInvertido {
 		}
 	}
 	
-	public static void bancoPalavrasByte(String [] listaArquivos) throws FileNotFoundException{
-		//varre a lista de arquivos, ie todas as paginas
-		for (int i = 1; i <= listaArquivos.length; i++) {
-			//hastable temporario para salvar as palavras em uma pagina
-			Hashtable tempHash = new Hashtable();
-			String st = "";
-			String arrayTemp[];
-			//apaonta para a pagina salva no arquivo i.txt
-			File temp = new File("Teste\\" + i + ".txt");
-			Scanner tempScan = new Scanner(temp);
-			//Le toda a pagina salvano as linhas com espacos
-			while (tempScan.hasNext()) {
-				st += tempScan.nextLine() + " ";
-			}
-			arrayTemp = st.split(" ");
-			//modifica o hashtable temporario de acordo com as palavras do documento
-			for (int ii = 0; ii < arrayTemp.length; ii++) {
-				//se a palavra ja foi inserida no hashtable adiciona de 1 o valor salvo pela key
-				 if (tempHash.containsKey(arrayTemp[ii])) {
-					int aux = (int) tempHash.get(arrayTemp[ii]);
-					tempHash.put(arrayTemp[ii], aux + 1);
-				//caso o hashtable nao possua a palavra, a insere como key com valor inicial 1
-				 } else
-					tempHash.put(arrayTemp[ii], 1);
-			}
-			//vai pegar todos os valores do hashtable temporario e passar para o hashtable principal respeitando o seu formato
-			int s = 0;
-			//pega todas as keys do hashtable temporario
-			Enumeration names = tempHash.keys();
-			//enquanto aind tiverem keys
-			while (s < tempHash.size()) {
-				//usa a key para pegar o valor no hashtable temporario
-				String key = (String) names.nextElement();
-				int tempFreqa = (int) tempHash.get(key);
-				byte tempFreq = (byte) tempFreqa;
-				//se o hashtable principal ja contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
-				//com as informacoes do hashtable temporario, ie insere no final da lista
-				if (arquivo.containsKey(key)) {
-					Node tempNode = (Node) arquivo.get(key);
-					Node tempLast = tempNode.getLast();
-					byte tempDistancia;
-					if(tempNode!=tempLast) tempDistancia = (byte) (i-(tempNode.getNumDocByte()+tempLast.getNumDocByte()));
-					else tempDistancia = (byte) (i - tempNode.getNumDocByte());
-					tempNode.setNext(new Node(tempDistancia, tempFreq));
-					arquivo.put(key, tempNode);
-				//caso o hashtable principal nao possua a key a insere como head 
-				} else{
-					byte iii = (byte) i;
-					arquivo.put(key, new Node(key, iii, tempFreq));
-				}
-				s++;
-			}
-		}
-		
-	}
 
 	public static void bancoPalavras(File[] listaArquivos) throws FileNotFoundException {
-		int i=0;
 		for (File temp : listaArquivos) {
-			i++;
+			String i = temp.getName();
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
@@ -294,7 +239,7 @@ public class ArquivoInvertido {
 		}
 	}
 
-	public Hashtable getArquivoInvertido() {
+	public Hashtable getIndiceInvertido() {
 		return this.arquivo;
 	}
 	

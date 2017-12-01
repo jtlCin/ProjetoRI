@@ -34,10 +34,10 @@ public class Main {
 				int k = (int) tempHash.get(key);
 				if(arquivo.containsKey(key)){
 					Node tempNode = (Node) arquivo.get(key);
-					tempNode.setNext(new Node (i, k));
+					tempNode.setNext(new Node (i+"", k));
 					arquivo.put(key, tempNode);
 				}
-				else arquivo.put(key, new Node (key, i, k));
+				else arquivo.put(key, new Node (key, i+"", k));
 				s++;
 			 }
 		}
@@ -58,12 +58,12 @@ public class Main {
 				String [] arrayTemp = temp.split(" ");
 				//cria o head da lista, assume que se o termo esta no documento ele aparece em pelo menos uma pagina com uma frequancia, entao podemos pegar 3 elementos
 				//no arrayTemp: arrayTemp[0] = String do termo, arrayTemp[1] = primeiro documento em que o termo aparece, arrayTemp[2] = frequencia do termo nesse documento
-				nodeTemp = new Node (arrayTemp[0], Integer.parseInt(arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
+				nodeTemp = new Node (arrayTemp[0], (arrayTemp[1]), Integer.parseInt(arrayTemp[2]));
 				//insere o head na hastable
 				arquivo.put(arrayTemp[0], nodeTemp);
 				//para cada um dos outros pares documento/frequencia, insere eles no next do ultimo node inserido e seta o novo nodeTemp
 				for(int i = 3; i<arrayTemp.length; i+=2){
-					nodeTemp.setNext(new Node (Integer.parseInt(arrayTemp[i]), Integer.parseInt(arrayTemp[i+1])));
+					nodeTemp.setNext(new Node ((arrayTemp[i]), Integer.parseInt(arrayTemp[i+1])));
 					nodeTemp = nodeTemp.getNext();
 				}
 			}
