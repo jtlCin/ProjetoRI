@@ -22,7 +22,7 @@ public class ArquivoInvertido {
 			File arquivoInvertido = new File(arquivoOuDiretorio);
 			Scanner sc = new Scanner(arquivoInvertido);
 			// ler enquanto tiver linha (cada linha representa uma lista de
-			// documentos/frequancia separados por espa�o que contem o termo
+			// documentos/frequancia separados por espaco que contem o termo
 			// que
 			// aparece como 1 elemento da linha)
 			while (sc.hasNext()) {
@@ -76,7 +76,7 @@ public class ArquivoInvertido {
 				File arquivoInvertido = new File("ai");
 				Scanner sc = new Scanner(arquivoInvertido);
 				// ler enquanto tiver linha (cada linha representa uma lista de
-				// documentos/frequancia separados por espa�o que contem o termo
+				// documentos/frequancia separados por espaco que contem o termo
 				// que
 				// aparece como 1 elemento da linha)
 				while (sc.hasNext()) {
@@ -213,7 +213,7 @@ public class ArquivoInvertido {
 			//apaonta para a pagina salva no arquivo i.txt
 			File temp = new File("Teste\\" + i + ".txt");
 			Scanner tempScan = new Scanner(temp);
-			//Le toda a pagina salvano as linhas com espa�os
+			//Le toda a pagina salvano as linhas com espacos
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
 			}
@@ -238,7 +238,7 @@ public class ArquivoInvertido {
 				String key = (String) names.nextElement();
 				int tempFreqa = (int) tempHash.get(key);
 				byte tempFreq = (byte) tempFreqa;
-				//se o hashtable principal j� contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
+				//se o hashtable principal ja contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
 				//com as informacoes do hashtable temporario, ie insere no final da lista
 				if (arquivo.containsKey(key)) {
 					Node tempNode = (Node) arquivo.get(key);

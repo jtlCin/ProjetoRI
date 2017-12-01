@@ -48,7 +48,7 @@ public class Main {
 		try{
 			File arquivoInvertido = new File("ai");
 			Scanner sc =  new Scanner(arquivoInvertido);
-			//ler enquanto tiver linha (cada linha representa uma lista de documentos/frequancia separados por espa�o que contem o termo que aparece como 1 elemento da linha)
+			//ler enquanto tiver linha (cada linha representa uma lista de documentos/frequancia separados por espaco que contem o termo que aparece como 1 elemento da linha)
 			while(sc.hasNext()){
 				//vai salvar o ultimo node inserido para facilitar a insercao de novos nodes
  				Node nodeTemp;
