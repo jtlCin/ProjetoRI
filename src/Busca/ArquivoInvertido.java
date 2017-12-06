@@ -1,14 +1,18 @@
 package Busca;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ArquivoInvertido {
 	private static Hashtable arquivo;
@@ -54,10 +58,11 @@ public class ArquivoInvertido {
 			// caso o arquivo nao exista busca criar o arquivo
 		} catch (FileNotFoundException e) {
 			String listaArquivos[];
-			// substituir a pasta paginas
-			listaArquivos = new File("Teste").list();
+			// substituir a pasta Pagclean
+			listaArquivos = new File("Pagclean").list();
 			try {
 				bancoPalavras(listaArquivos);
+				gerarAttrEsp(listaArquivos);
 				salvar();
 			} catch (FileNotFoundException e1) {
 				// TODO Auto-generated catch block
@@ -108,10 +113,11 @@ public class ArquivoInvertido {
 				// caso o arquivo nao exista busca criar o arquivo
 			} catch (FileNotFoundException e) {
 				String listaArquivos[];
-				// substituir a pasta paginas
-				listaArquivos = new File("Teste").list();
+				// substituir a pasta Pagclean
+				listaArquivos = new File("Pagclean").list();
 				try {
 					bancoPalavras(listaArquivos);
+					gerarAttrEsp(listaArquivos);
 					salvar();
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
@@ -162,10 +168,11 @@ public class ArquivoInvertido {
 				// caso o arquivo nao exista busca criar o arquivo
 			} catch (IOException e) {
 				String listaArquivos[];
-				// substituir a pasta paginas
-				listaArquivos = new File("Teste").list();
+				// substituir a pasta Pagclean
+				listaArquivos = new File("Pagclean").list();
 				try {
 					bancoPalavrasByte(listaArquivos);
+					gerarAttrEsp(listaArquivos);
 					FileWriter fw = new FileWriter("aic");
 					BufferedWriter bw = new BufferedWriter(fw);
 					//File arquivoInvertido = new File("aic");
@@ -201,14 +208,14 @@ public class ArquivoInvertido {
 	}
 	
 	public static void bancoPalavrasByte(String [] listaArquivos) throws FileNotFoundException{
-		//varre a lista de arquivos, ie todas as paginas
-		for (int i = 1; i <= listaArquivos.length; i++) {
+		//varre a lista de arquivos, ie todas as Pagclean
+		for (int i = 0; i < listaArquivos.length; i++) {
 			//hastable temporario para salvar as palavras em uma pagina
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
 			//apaonta para a pagina salva no arquivo i.txt
-			File temp = new File("Teste\\" + i + ".txt");
+			File temp = new File("Pagclean\\" + listaArquivos[i]);
 			Scanner tempScan = new Scanner(temp);
 			//Le toda a pagina salvano as linhas com espaços
 			while (tempScan.hasNext()) {
@@ -257,11 +264,11 @@ public class ArquivoInvertido {
 	}
 
 	public static void bancoPalavras(String[] listaArquivos) throws FileNotFoundException {
-		for (int i = 1; i <= listaArquivos.length; i++) {
+		for (int i = 0; i < listaArquivos.length; i++) {
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
-			File temp = new File("Teste\\" + i + ".txt");
+			File temp = new File("Pagclean\\" + listaArquivos[i]);
 			Scanner tempScan = new Scanner(temp);
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
@@ -294,6 +301,19 @@ public class ArquivoInvertido {
 		return this.arquivo;
 	}
 	
+	private void salvarHash(String key, int numDoc, int freq){
+		if (arquivo.containsKey(key)) {
+			//pega o head da lista
+			Node tempNode = (Node) arquivo.get(key);
+			//seta o next do head coom o numero do documento e a frequancia 1
+			tempNode.setNext(new Node(numDoc, freq));
+			//salva de volta na hashtable
+			arquivo.put(key, tempNode);
+		//caso não exista na hashtable cria um head novo
+		} else
+			arquivo.put(key, new Node(key, numDoc, freq));
+	}
+	
 	private void salvar() throws IOException{
 		FileWriter fw = new FileWriter("ai");
 		BufferedWriter bw = new BufferedWriter(fw);
@@ -313,6 +333,116 @@ public class ArquivoInvertido {
 			s++;
 		}
 		
+	}
+	
+	private void gerarAttrEsp(String [] listaArquivos) throws IOException{
+		Pattern marca;
+		Pattern sisOP;
+		Pattern proc;
+		Pattern hd;
+		Pattern polTela;
+		for (int i = 0; i < listaArquivos.length; i++) {
+			Hashtable tempHash = new Hashtable();
+			String st = "";
+			String arrayTemp;
+			String temp;
+			FileReader fr = new FileReader("Paginas\\1.txt");
+			BufferedReader br = new BufferedReader(fr);
+			while ((temp = br.readLine()) != null) {
+				st += ("\n" + temp);
+			}
+			System.out.println(st + "\n\n");
+
+			if (st.contains("carrefour")) {
+				
+				marca = Pattern.compile("Marca</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
+				sisOP = Pattern.compile("Sistema operacional</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
+				proc = Pattern.compile("Processador</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
+				hd = Pattern.compile("HD</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
+				polTela = Pattern.compile("Tamanho da Tela</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
+			} else if (st.contains("americanas")) {
+
+				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>(.*?)<");
+			} else if (st.contains("casasbahia")) {
+
+				proc = Pattern.compile("class=\"Processador\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\\®\\™]+)\\s<");
+				marca = Pattern.compile("class=\"contatoFornecedor\">\\s*<h3 class=\"tit\">Contato ([a-zA-z0-9\\-\\s]+)\\s<");
+				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
+				hd = Pattern.compile("class=\"Disco rígido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
+				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
+			} else if (st.contains("pontofrio")) {
+
+				proc = Pattern.compile("class=\"Processador\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\\®\\™]+)\\s<");
+				marca = Pattern.compile("class=\"contatoFornecedor\">\\s*<h3 class=\"tit\">Contato ([a-zA-z0-9\\-\\s]+)\\s<");
+				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
+				hd = Pattern.compile("class=\"Disco rígido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
+				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
+			} else {
+
+				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>([0-9\\.\"]+).*");
+			}
+			
+			
+			Matcher matcher;
+			matcher = proc.matcher(st);
+			if (matcher.find() && matcher.groupCount() == 1) {
+				//salva o valor do campo
+				String codigoDoUsuario = matcher.group(1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				String num [] = listaArquivos[i].split(".");
+				//se ja existir no hastable
+				salvarHash("processador." + codigoDoUsuario, Integer.parseInt(num[0]), 1);
+			}
+			
+			
+			matcher = sisOP.matcher(st);
+			if (matcher.find() && matcher.groupCount() == 1) {
+				//salva o valor do campo
+				String codigoDoUsuario = matcher.group(1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				String num [] = listaArquivos[i].split(".");
+				salvarHash("sistemaoperacional." + codigoDoUsuario, Integer.parseInt(num[0]), 1);
+			}
+			
+			
+			matcher = marca.matcher(st);
+			if (matcher.find() && matcher.groupCount() == 1) {
+				//salva o valor do campo
+				String codigoDoUsuario = matcher.group(1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				String num [] = listaArquivos[i].split(".");
+				salvarHash("marca." + codigoDoUsuario, Integer.parseInt(num[0]), 1);
+			}
+			
+			
+			matcher = hd.matcher(st);
+			if (matcher.find() && matcher.groupCount() == 1) {
+				//salva o valor do campo
+				String codigoDoUsuario = matcher.group(1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				String num [] = listaArquivos[i].split(".");
+				salvarHash("hd." + codigoDoUsuario, Integer.parseInt(num[0]), 1);
+			}
+			
+			
+			matcher = polTela.matcher(st);
+			if (matcher.find() && matcher.groupCount() == 1) {
+				//salva o valor do campo
+				String codigoDoUsuario = matcher.group(1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				String num [] = listaArquivos[i].split(".");
+				salvarHash("polegadatela." + codigoDoUsuario, Integer.parseInt(num[0]), 1);
+			}
+
+		}
 	}
 
 }

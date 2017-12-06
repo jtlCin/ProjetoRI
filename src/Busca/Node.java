@@ -32,8 +32,8 @@ public class Node {
 		next = null;
 	}
 	
-	public int getNumDoc() {
-		return this.numDoc;
+	public String getNumDoc() {
+		return this.numDoc+"";
 	}
 
 	public int getFreq() {
