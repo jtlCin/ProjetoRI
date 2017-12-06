@@ -17,8 +17,11 @@ public class Ranking {
         this.a = a;
         this.indiceInvertido = a.getIndiceInvertido();
     }
-
     public List search(String query) {
+        return search(query, true);
+    }
+
+    public List search(String query, boolean tfidf) {
         /** Dado um query retorna as paginas que devem aparecer ordenadas pelos seus rankings */
         List r = new ArrayList<Pair>();
         String[] words = query.split(" ");
@@ -27,21 +30,29 @@ public class Ranking {
         for (String word : words) { //organizando palavras e vetores 
             if (indiceInvertido.containsKey(word)) { //se alguem tem a palavra
                 Node no = (Node) indiceInvertido.get(word);
-                int N = 0;
+                int N = indiceInvertido.size();
                 int Ni = 0;
+                do { //passando uma vez apenas para contar qtde de documentos
+                    Ni++;
+                    no = no.getNext();
+                } while (no!= null);
+
+                no = (Node) indiceInvertido.get(word);
                 do {
-                    N++;
                     String doc = no.getNumDoc();
                     docs.put(doc, ""); //salvando nome de doc
                     double tf = no.getFreq();
-                    Ni += tf;
                     Hashtable v;
                     if (scoreByDocs.containsKey(doc)) {
                         v = (Hashtable) scoreByDocs.get(doc);
                     } else {
                         v = new Hashtable<String, Double>();
                     }
-                    v.put(word, tf); //o documento doc tem determinado score para essa word 
+                    double score = tf;
+                    if (tfidf) {
+                        score *= Math.log(N/Ni);
+                    }
+                    v.put(word, score); //o documento doc tem determinado score para essa word 
                     scoreByDocs.put(doc, v); //guarda hashtable de doc
                     no = no.getNext();
                 } while (no != null);
