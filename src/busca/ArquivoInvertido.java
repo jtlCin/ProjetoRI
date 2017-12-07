@@ -381,7 +381,54 @@ public class ArquivoInvertido {
 				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
 				hd = Pattern.compile("class=\"Disco rígido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
 				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
-			} else {
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			}else if(st.contains("extra.com")){
+				
+				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+				
+				marca = Pattern.compile("Detalhes do produto: (.*?):");
+	            polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+	            sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+	            proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+			}else if(st.contains("kabum")){
+				
+				polTela = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+	            sisOP = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+	            proc = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+	            hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+	            
+	            
+				marca = Pattern.compile("<title>KaBuM! - .*?(?: Gamer|) (.*?) ");
+			}else if(st.contains("dell.com/br/")){
+			
+				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+				
+				marca = Pattern.compile("Dell");
+				polTela = Pattern.compile("Tela<.*?>Tela .*? de (.*?) polegadas .*?</span>");
+				sisOP = Pattern.compile("Sistema operacional<.*?<span.*?>(.*?)</span>");
+				proc = Pattern.compile("Processador<.*?<span.*?>(.*?)</span>");
+			}else if(st.contains("domain = 'lojahp.com.br'")){
+			
+				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
+				
+				marca = Pattern.compile("Notebook ([^\\s]*?) (.*?) com Processado");
+				polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+				sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+				proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+			}
+			
+			
+			 else {
 
 				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
 				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
