@@ -2,6 +2,7 @@ package busca;
 
 import java.util.Hashtable;
 import java.util.List;
+import java.io.IOException;
 import java.util.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -94,8 +95,8 @@ public class Ranking {
         return r;
     }
 
-    public static void main(String[] args) {
-        ArquivoInvertido a = new ArquivoInvertido(false, "../Paginas/");
+    public static void main(String[] args) throws IOException {
+        ArquivoInvertido a = new ArquivoInvertido();
         Ranking r = new Ranking(a);
         String query = "notebook usados processador";
         List<Pair> l = r.search(query);
