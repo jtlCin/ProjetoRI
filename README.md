@@ -1,5 +1,5 @@
 # ProjetoRI
-Criando um indexador a partir de um crawler, um classificador e um extrator específico.
+Criando um indexador e um buscador para páginas de Notebooks.
 
 ## Execução
 No diretório raiz do projeto, rode o ri.jar ou use o Makefile:
@@ -7,7 +7,7 @@ No diretório raiz do projeto, rode o ri.jar ou use o Makefile:
 ````
 $ java -jar ri.jar
 ````
-
+ou 
 ````
 $ make
 ````
