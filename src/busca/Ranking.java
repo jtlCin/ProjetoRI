@@ -83,9 +83,10 @@ public class Ranking {
         Collections.sort(r, new Comparator<Pair>() {
             public int compare(Pair one, Pair two) {
                 if (one.value == two.value) { //deixando por ordem de numeracao dos documentos
-                    String o = ext(one.doc, "(.*?)[.]");
-                    String t = ext(two.doc, "(.*?)[.]");
-                    return Integer.parseInt(o) > Integer.parseInt(t) ? 1 : -1;
+                    // String o = ext(one.doc, "(.*?)[.]");
+                    // String t = ext(two.doc, "(.*?)[.]");
+                    // return Integer.parseInt(o) > Integer.parseInt(t) ? 1 : -1;
+                    return 0;
                 }
                 if (one.value > two.value) return -1;
                 return 1;
@@ -95,15 +96,51 @@ public class Ranking {
         return r;
     }
 
+    public static double kendal(List<Pair> l1, List<Pair> l2) {
+        List <Pair2> list = new ArrayList<Pair2>();
+        int pares = 0;
+        for (int i=0; i<l1.size()-1; i++) {
+            for (int j=i+1;j<l1.size(); j++) {
+                list.add(new Pair2(l1.get(i), l2.get(j)));
+                pares++;
+            }
+        }
+        int concordantes = 0, discordantes = 0;
+        for (int i=0; i<l2.size()-1; i++) {
+            for (int j=i+1;j<l2.size(); j++) {
+                pares++;
+                if (Pair2.find(list, new Pair2(l2.get(i), l2.get(j)))) {
+                    concordantes++;
+                } else {
+                    discordantes++;
+                }
+            }
+        }
+        return 1.0 - ((double)2*discordantes/(double)pares);
+
+    }
+
+    public String searchToString(String search, boolean tdidf) {
+        String r = "";
+        List<Pair> l = search(search, tdidf);
+        for (Pair i : l) {
+            r += i + "\n";
+        }
+        return r;
+    }
+
+    public String kendallToString(String query, String query2) {
+        return kendal(search(query), search(query2)) + "";
+    }
+
+
     public static void main(String[] args) throws IOException {
         ArquivoInvertido a = new ArquivoInvertido();
         Ranking r = new Ranking(a);
-        String query = "notebook usados processador";
-        List<Pair> l = r.search(query);
-        for (Pair i : l) {
-            System.out.println(i);
-        }
-
+        String query = "notebook processador";
+        String query2 = query + " usados";
+        print(r.searchToString(query2, false));
+        print(r.kendallToString(query, query2));
     }
 
 
@@ -144,4 +181,26 @@ class Pair {
     public String toString() {
         return (this.doc + " " + this.value);
     }
+}
+
+class Pair2 {
+    public Pair p1;
+    public Pair p2;
+
+    public Pair2(Pair p1, Pair p2) {
+        this.p1 = p1;
+        this.p2 = p2;
+    }
+
+    public static boolean find(List<Pair2> l, Pair2 r) {
+        /** Dado um Pair2 e uma Lista, diz se ele existe nela */
+        for (int i=0; i<l.size(); i++) {
+            Pair2 t = l.get(i);
+            if ((t.p1.doc == r.p1.doc) && (t.p2.doc == r.p2.doc)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
