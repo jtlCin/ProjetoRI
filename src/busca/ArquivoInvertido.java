@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 public class ArquivoInvertido {
 	private static Hashtable arquivo = new Hashtable();
 
-	public ArquivoInvertido()  {
+	public ArquivoInvertido() throws FileNotFoundException, IOException {
 		// tenta ler o arquivo de lista invertida
 		try {
 			File arquivoInvertido = new File("ai");
@@ -61,14 +61,9 @@ public class ArquivoInvertido {
 			String listaArquivos[];
 			// substituir a pasta Pagclean
 			listaArquivos = new File("Pagclean").list();
-			try {
 				bancoPalavras(listaArquivos);
 				gerarAttrEsp(listaArquivos);
 				salvar();
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
 		}
 	}
 

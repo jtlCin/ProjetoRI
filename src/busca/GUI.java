@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JCheckBox;
@@ -22,8 +23,8 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
 
 public class GUI {
-	private ArquivoInvertido a = new ArquivoInvertido();
-	private Ranking r = new Ranking(a);
+	private ArquivoInvertido a;
+	private Ranking r;
 	private JTextArea textArea;
 	private JFormattedTextField searchTextField, marcaTextField_2, processadorTextField_1;
 	private JCheckBox kendalchckbxS, tfidfchckbxTfidf;
@@ -51,7 +52,13 @@ public class GUI {
 	 * Create the application.
 	 */
 	public GUI() {
-		initialize();
+		try {
+			a = new ArquivoInvertido();
+			r = new Ranking(a);
+			initialize();
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Nao foi possivel encontrar o arquivo do indice invertido (./ai) e nem as paginas para gerar o indice.");
+		}
 	}
 
 	/**
