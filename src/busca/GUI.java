@@ -15,13 +15,14 @@ import javax.swing.JList;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JCheckBox;
+import javax.swing.JRadioButton;
 
 public class GUI {
-//	private ArquivoInvertido a = new ArquivoInvertido();
-//	private Ranking r = new Ranking(a);
+	private ArquivoInvertido a = new ArquivoInvertido();
+	private Ranking r = new Ranking(a);
 	private JTextArea textArea;
-	private JCheckBox tfidfMark;
-	private JFormattedTextField searchTextField, marcaTextField_2, processadorTextField_1, kendalTextField;
+	private JFormattedTextField searchTextField, marcaTextField_2, processadorTextField_1;
+	private JCheckBox kendalchckbxS, tfidfchckbxTfidf;
 	private JComboBox soBox, hdBox, polegadasBox;
 	private JFrame frmNotebooksSearch;
 	
@@ -147,11 +148,12 @@ public class GUI {
 					search += " processador." + processador;
 				}
 				String string = "";
-				if (kendalTextField.getText().length() > 0) {
+				if (!kendalchckbxS.isSelected()) {
 					System.out.println("Buscando por " + search);
-					string = r.searchToString(search, tfidfMark.isSelected());
-				} else { //kendall 
-					string = r.kendallToString(search, kendalTextField.getText());
+					string = r.searchToString(search, tfidfchckbxTfidf.isSelected());
+				} else { //kendall
+					System.out.println("Kendal em " + search);
+					string = r.kendallToString(search);
 				}
 				textArea.setText(string);
 			}
@@ -160,23 +162,19 @@ public class GUI {
 		frmNotebooksSearch.getContentPane().add(btnGo);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(264, 95, 166, 59);
+		scrollPane.setBounds(264, 10, 166, 144);
 		frmNotebooksSearch.getContentPane().add(scrollPane);
 		
 		textArea = new JTextArea();
 		textArea.setEditable(false);
 		scrollPane.setViewportView(textArea);
 		
-		kendalTextField = new JFormattedTextField();
-		kendalTextField.setBounds(269, 183, 145, 19);
-		frmNotebooksSearch.getContentPane().add(kendalTextField);
+		kendalchckbxS = new JCheckBox("kendal");
+		kendalchckbxS.setBounds(8, 195, 82, 23);
+		frmNotebooksSearch.getContentPane().add(kendalchckbxS);
 		
-		JLabel lblSearchkendal = new JLabel("search2 (kendal)");
-		lblSearchkendal.setBounds(136, 185, 127, 15);
-		frmNotebooksSearch.getContentPane().add(lblSearchkendal);
-		
-		tfidfMark = new JCheckBox("tfidf");
-		tfidfMark.setBounds(12, 195, 129, 23);
-		frmNotebooksSearch.getContentPane().add(tfidfMark);
+		tfidfchckbxTfidf = new JCheckBox("tfidf");
+		tfidfchckbxTfidf.setBounds(116, 195, 82, 23);
+		frmNotebooksSearch.getContentPane().add(tfidfchckbxTfidf);
 	}
 }

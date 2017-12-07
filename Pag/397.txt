@@ -1,0 +1,1334 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head id="ctl00_headMaster"><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><title>
+	Comprar Notebook Dell com Processador: Intel Core i7 e Conexões: HDMI | Preço de Notebook Dell - Extra.com.br
+</title><meta name="language" content="pt-br" /><meta name="resource-type" content="document" /><meta name="robots" content="INDEX,FOLLOW" /><meta name="distribution" content="Global" /><meta name="rating" content="General" />
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="author" content="Extra.com.br" />
+<meta name="keywords" content="notebook, notebooks, laptop, laptops, computador móvel, computadores móveis, computador portátil, computadores portáteis, " />
+<link rel="canonical" href="http://www.extra.com.br/informatica/notebook/dell/nvidia-geforce/?filtro=c56_c57_m146_v16003" />
+<link rel='alternate' href='https://m.extra.com.br/#/resultado-da-busca/?filters=M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003&departmentId=57' />
+<meta property="fb:admins" content="100000699969117" />
+<script type="text/javascript">document.domain = 'extra.com.br'; document.carrinho = 'https://carrinho.extra.com.br'; idUnidadeNegocio = 5; token = 'fb335ac4-a9ff-4cc7-ac9c-eb8ae9058bc5';</script><link rel="stylesheet" type="text/css" href="http://www.extra-imagens.com.br/App_Themes/Extra/css/componentsP.css" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://www.extra-imagens.com.br/App_Themes/Extra/css/components_IEP.css" /><![endif]-->
+<link href="http://www.extra-imagens.com.br/App_Themes/Extra/css/non-responsive.css" rel="stylesheet" /><link id="ctl00_lnkRelShortCutIcon" rel="shortcut icon" href="http://www.extra-imagens.com.br/App_Themes/Extra/favicon.ico" /><link id="ctl00_cssTypeaheadDefault" rel="stylesheet" type="text/css" /><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script type="text/javascript">if(typeof jQuery == 'undefined') {document.write('<script type="text/javascript" src="http://www.extra-imagens.com.br/Js/jquery.js"></' + 'script>')};</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<link href="http://www.extra-imagens.com.br/Js/JQuery/jquery-ui.min.css" rel="stylesheet"/>
+<script type="text/javascript">if(typeof jQuery.ui == 'undefined') {document.write('<script type="text/javascript" src="http://www.extra-imagens.com.br/Js/JQuery/jquery-ui.js"></' + 'script>')};</script>
+
+ <script type="text/javascript" src="http://www.extra-imagens.com.br/Js/jquery.jail.min.js"></script>
+<script type="text/javascript" src="http://www.extra-imagens.com.br/Js/utilsP.js"></script>
+<script type="text/javascript" src="http://www.extra-imagens.com.br/JS/jsExtraP.js?20160916"></script>
+<script type="text/javascript" src="/scripts/lib/ajax.js"></script><script type="text/javascript" src="/scripts/lib/cliente.js"></script><script type="text/javascript" src="//carrinho.extra.com.br/bundles/cnovasocial/vitrine"></script>
+
+<!-- START PR -->
+<script type="text/javascript" src="http://www.extra-imagens.com.br/Js/pwr/engine/js/full.js"></script>
+
+<script type="text/javascript">var pr_locale= "pt_BR"; var pr_zip_location= "http://www.extra-imagens.com.br/Js/"; var pr_style_sheet ="https://www.extra-imagens.com.br/App_Themes/Extra/css/pr.css";</script>
+<script type="application/ld+json">{"@context":"http://schema.org", "@type": "Organization", "url": "https://www.extra.com.br", "logo": "https://www.extra-imagens.com.br/html/logo/logo_extra.jpg"} </script><script type = "application/ld+json">{ "@context": "http://schema.org","@type": "WebSite","url": "https://www.extra.com.br","potentialAction": [{"@type": "SearchAction","target": "https://buscando.extra.com.br/?strBusca={strBusca}","query-input": "required name=strBusca"},{"@type": "SearchAction","target": "com.cnova.extra://?query={query}","query-input": "required name=query"},{"@type": "SearchAction","target": "intent://extra.com.br/?query={query}#Intent;scheme=com.cnova.extra;package=com.sonyericsson.extra;end","query-input": "required name=query"}]} </script><script type="application/ld+json">{ "@context" : "http://schema.org","@type" : "Organization","name" : "Extra","url" : "https://www.extra.com.br","sameAs" : [ "https://www.facebook.com/familiaextra", "https://twitter.com/familiaextra","https://plus.google.com/+extracombr"] }</script><script type="text/javascript" src="/Js/filtroOrdenacao.js"></script>
+<script type="text/javascript" src="/Js/jquery.linq.js"></script>
+<script type="text/javascript" src="http://www.extra-imagens.com.br/Js/vitrine-ab.js"></script>
+<script type="text/javascript" >
+ValidarBuscaOrganica();
+</script>
+<script type="text/javascript">
+var siteMetadata = {"site":{"name":"Extra","domain":"extra.com.br","acronym":"EX","country":"BR","region":"pt-br","currency":"BRL","test":false},"page":{"idCategory":"57","categoryName":"Notebook","name":"Notebook","templateName":"PAGINABUSCA","breadCrumb":[{"id":"C56","name":"Inform%C3%A1tica","type":"department"},{"id":"C57","name":"Notebook","type":"line"},{"id":"M146","name":"Dell","type":"brand"},{"id":"V11168","name":"Intel%20Core%20i7","type":"feature"},{"id":"V3362","name":"HDMI","type":"feature"},{"id":"V3359","name":"Webcam%20integrada","type":"feature"},{"id":"V93247","name":"Wireless","type":"feature"},{"id":"V2877","name":"Cinza","type":"feature"},{"id":"V89710","name":"Windows%2010","type":"feature"},{"id":"V16003","name":"NVIDIA%20GeForce","type":"feature"}],"banners":{"icid":[]},"hotSites":{"icid":["132938","132939","132924"]},"seoContent":false,"listItems":[{"idSku":"9248074","idProduct":"5799168","idDepartment":"0","idCategory":"0","idBrand":"0","nameBrand":"","name":"notebook%20gamer%20dell%20alienware%20aw-17r3-a10%20com%20nvidia%20geforce%20gtx%20970m%2C%20intel%C2%AE%20core%E2%84%A2%20i7-6700hq%2C%208gb%2C%201tb%2C%20led%20full%20hd%2017.3%E2%80%9D%20e%20windows%2010","salePrice":0.0,"discountPercentage":0.0,"StockAvailability":false,"flagCartao":0,"income":0.0,"HasReview":false,"QtdReview":0,"RatingReview":0.0,"isMicrosoft":false}],"ambienteId":0},"tms":{"coreLocation":"//carrinho.extra.com.br/Js/TagManager/","customLocation":"//carrinho.extra.com.br/App_Themes/Extra/js/TagManager/","version":{"siteMetadata":"1.5.130305"}},"displayCase":{"rectype":[],"recsource":[]}};
+</script>
+<script type="text/javascript" charset="UTF-8" src="//carrinho.extra.com.br/Js/TagManager/loader.js"></script>
+
+<!-- Início scripts Framework -->
+<script type="text/javascript" charset="UTF-8" src="//carrinho.extra.com.br/Js/JsFramework/gpa.comercio.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//carrinho.extra.com.br/Js/JsFramework/gpa.comercio.funcionalidade.livePrice.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//carrinho.extra.com.br/Js/JsFramework/gpa.comercio.funcionalidade.tooltipLojista.js"></script>
+<script type="text/javascript" >
+ var _JsLivePriceGeradorLocation = 'https://sli.extra.com.br/GeraArqXmlPreco.ashx';
+var _urlLogoLojista = 'https://www.extra-imagens.com.br/App_Themes/Extra/img/lojista/';
+</script>
+<script type="text/javascript" charset="UTF-8" src="//carrinho.extra.com.br/Js/JsFramework/gpa.comercio.funcionalidade.tooltipLojista.js"></script>
+<!-- Final scripts Framework -->
+
+<script type="text/javascript"> var _testeAB = ".testeA"; </script>
+<script src="/Js/JsFramework/gpa.comercio.funcionalidade.bannerCarrossel.js"></script>
+<script src="/Js/JsFramework/gpa.comercio.funcionalidade.executa.js"></script>
+
+    </head>
+<body id="ctl00_home" class="busca-resultado Notebook">
+
+    <script type="text/javascript">
+        window.__tenantCookieName = 'Extra.com';
+    </script>
+    
+    
+    
+    
+    <form name="aspnetForm" method="post" action="/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="3" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ4NzQyNTQy" />
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="OGRkyUbSzqF1UlNyFSWs" />
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="3ZjsY3QVfVU=" />
+
+
+<script src="/js/lodash.min.js" type="text/javascript"></script>
+<script src="/js/typeahead.bundle.min.js" type="text/javascript"></script>
+<script src="/js/recommendation-v2.2.2.js" type="text/javascript"></script>
+<script src="https://www.extra.com.br/js/search-autocomplete.js" type="text/javascript"></script><script type="text/javascript">
+                    function VerificaBusca(Form, txtTexto, comboCategoria, Url)
+                    {
+                        textoBusca = (Form.elements[txtTexto].value.replace(/[\,\+\;\"\'\/\\\<\>]/g,""));
+                        textoBusca = textoBusca.toUpperCase();
+
+                        if(textoBusca == "LISTA DE CASAMENTO" || textoBusca == "LISTAS DE CASAMENTO") { window.location = '//casamento.extra.com.br';
+                            Form.elements[txtTexto].value = "";
+                        }
+                        else
+                            EnviaBusca(Form, txtTexto, comboCategoria, Url)
+                    }</script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"pt-BR","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":".","CurrencySymbol":"R$","NaNSymbol":"NaN (Não é um número)","CurrencyNegativePattern":9,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-Infinito","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":".","CurrencyPositivePattern":2,"PositiveInfinitySymbol":"+Infinito","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":".","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135589600000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy HH:mm:ss","LongDatePattern":"dddd, d\u0027 de \u0027MMMM\u0027 de \u0027yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d\u0027 de \u0027MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM\u0027 de \u0027yyyy","AbbreviatedDayNames":["dom","seg","ter","qua","qui","sex","sáb"],"ShortestDayNames":["D","S","T","Q","Q","S","S"],"DayNames":["domingo","segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado"],"AbbreviatedMonthNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""],"IsReadOnly":true,"NativeCalendarName":"Calendário gregoriano","AbbreviatedMonthGenitiveNames":["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez",""],"MonthGenitiveNames":["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro",""]},"eras":[1,"d.C.",null,0]};//]]>
+</script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjax.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type="text/javascript" src="/js/System.Web.Extensions/4.0.0.0/4.7.2106.0/MicrosoftAjax.js"><\/script>');//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A4B6798C" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABntm3iOW82X1m9ydW2tnfERekJYJXnBgdpThJpwBLaZEuhizfNPQTnYesPGPGonkpD8vmeMlLHxLHVQp15MKhIk0hHxkHS8pcDxkwlrAx/O+gKY2TBnoifjwEsbsamFfWoN++97XYQQtYDhudCbfPRwQ+XvUti52vd2NqQ601sZ0B8LxBatqhZt1WJZlhoxAnEhIw2z0njEADtFdFlIsaiKmFSGmtL05ZL/Vrd2x7Ui5iAOebF1L/XVkJOCLiJPIdliZkjdRR1B51zT1BBG8ZMsFdQ5PBlW3RrdU7nrEWdiTOOsIhSeluOfhv+wUOW1z4MsMGxAD0659LpACEYh0LhVhtS4AWuWuoUvME6ZtGmLTb/tTJXQLKRHc9/+hf2AgO6ONNxDkyNSu8OeEIm64r5Z9xgdx69NZTZAJwiQumKi+nhiiFIVns4KEcmtdvtbrcOtWxZin+1oihrdM7W8qyHmwgERcwjNPiyzW1+Ad34lOuz3SzjdfQFUAj3BGNYcwoZPc3TBdyzUrFPeRtZpJNBUWeddiaQoSpDk0V3NgEaoqhjbT0E=" />
+        
+        
+        
+    
+
+<div class="navbar" id="header">
+    <div id="ctl00_TopBar_TopBar_outerHeader" class="header">
+
+        <div id="ctl00_TopBar_TopBar_divHeader">
+            
+            <div class="navbar-controls">
+                <div class="wrapper wrapper-max-width">
+
+                    
+                    <div class="navbar-panel">
+                        <div class="navbar-panel-wrapper">
+
+                            
+                            <div class="navbar-panel__item navbar-menu-collapse only-mobile">
+                                <button type="button" class="collapsed" data-toggle="nav-expand" data-target="#navbar-collapse">
+                                    <span class="ic-navbar ic-menu"></span>
+                                </button>
+                            </div>
+
+                            
+                            <div class="navbar-panel__item navbar-brand">
+                                <a href="http://www.extra.com.br" title="Extra.com.br"><span class="logo">Extra.com.br</span></a>
+                            </div>
+
+                            
+                            <div class="navbar-panel__item navbar-commands">
+                                <div class="navbar-commands-wrapper">
+
+                                    <div class="navbar-commands__item navbar-commands--services">
+                                        <div class="navbar-services">
+                                            <div class="navbar-services-wrapper">
+
+                                                <div class="navbar-services__item navbar-services--links">
+  <ul class="links" id="ulServicos">
+  <li class="links__item links__item--televendas"><a title="Compre pelo 3004-6262" class="lnkPop headerlinks-link" href="https://www.extra.com.br/Site/PopUpMensagem.aspx?XmlTitulo=TituloPopupHelpTelevendas&XmlConteudo=ConteudoPopupHelpTelevendas&KeepThis=true&TB_iframe=true&height=380&width=610" id="ctl00_TopBar_TopBar1_popupDetalhes">Televendas <span class="headerlinks-tel">  4003-0363</span></a></li>
+  <li class="links__item links__item--faq"><a href="https://www.extra.com.br/CentraldeAtendimento/home.aspx" title="FAQ" target="_blank" class="headerlinks-link">Dúvidas</a></li>
+  <li class="links__item links__item--sac"><a title="Atendimento" href="https://carrinho.extra.com.br/Checkout?ReturnUrl=https://atendimento.extra.com.br/viewclient/faces/pages/contact.xhtml#login" class="headerlinks-link">Atendimento</a></li>
+  <li class="links__item links__item--localizador"><a href="http://localizador.extra.com.br/storeSearch/?organization=EXTRA" title="Localizador de lojas" target="_blank" class="headerlinks-link">Localizador de lojas</a></li>
+ 
+  </ul>
+</div>
+
+                                                
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar-commands__item navbar-commands--functions">
+                                        <div class="navbar-functions">
+                                            <div class="navbar-functions-wrapper">
+
+                                                
+                                                <div class="navbar-functions__item navbar-profile">
+                                                    <div class="box-profile ident">
+                                                        <div id="ctl00_TopBar_TopBar_divMenuWelcome" class="welcome">
+
+</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="navbar-functions__item navbar-cart">
+                                                    <div class="box-cart">
+                                                        <div class="cart">
+                                                            <div id="spnCarrinho">
+                                                                <a id="ctl00_TopBar_TopBar_lnkCarrinho" title="Meu carrinho" class="cart-link" href="http://carrinho.extra.com.br/">
+                                                                    <span class="ic-navbar ic-cart"></span>
+                                                                    <span class="navbar-cart-description">
+                                                                        Meu carrinho
+                                                                    </span>
+                                                                    <span class="navbar-cart-itens badge" id="itensCarrinho">
+                                                                        
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="navbar-search">
+                        <div class="navbar-search-wrapper">
+
+                            <div class="navbar-search__item">
+
+                                
+
+                                
+
+                                <input type="hidden" id="nomeSite" value="Extra.com" />
+                                <input type="hidden" id="UfOrigemAtacadoDefault" value="" />
+
+                                
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="nav-menu">
+            <div class="nav-collapse" id="navbar-collapse">
+                
+                <div class="wrapper wrapper-max-width">
+                    <div id="ctl00_TopBar_TopBar_lblMenuSuperior" class="menuWrap">
+                        <nav class="nav nav-top">
+                            <ul class="headerMenu nav-list" id="menu01">
+                                
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl00_liDepartamento" class="nav-item  type1 nav-item--tvs-e-acessorios ms-tvs-e-acessorios">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl00_lnkDepartamento" title="TVs e Acessórios" class="nav-link" href="http://www.extra.com.br/tvseacessorios/?Filtro=C1"><b>TVs e Acessórios</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl01_liDepartamento" class="nav-item   nav-item--eletrodomesticos ms-eletrodomesticos">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl01_lnkDepartamento" title="Eletrodomésticos" class="nav-link" href="http://www.extra.com.br/Eletrodomesticos/?Filtro=C13"><b>Eletrodomésticos</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl02_liDepartamento" class="nav-item   nav-item--cine-e-foto ms-cine-e-foto">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl02_lnkDepartamento" title="Cine e Foto" class="nav-link" href="http://www.extra.com.br/CineFoto/?Filtro=C29"><b>Cine e Foto</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl03_liDepartamento" class="nav-item  type1 nav-item--telefones-e-celulares ms-telefones-e-celulares">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl03_lnkDepartamento" title="Telefones e Celulares" class="nav-link" href="http://www.extra.com.br/TelefoneseCelulares/?Filtro=C38"><b>Telefones e Celulares</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl04_liDepartamento" class="nav-item selected  nav-item--informatica ms-informatica">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl04_lnkDepartamento" title="Informática" class="nav-link" href="http://www.extra.com.br/Informatica/?Filtro=C56"><b>Informática</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl05_liDepartamento" class="nav-item   nav-item--eletroportateis ms-eletroportateis">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl05_lnkDepartamento" title="Eletroportáteis" class="nav-link" href="http://www.extra.com.br/Eletroportateis/?Filtro=C73"><b>Eletroportáteis</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl06_liDepartamento" class="nav-item   nav-item--moveis ms-moveis">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl06_lnkDepartamento" title="Móveis" class="nav-link" href="http://www.extra.com.br/Moveis/?Filtro=C93"><b>Móveis</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl07_liDepartamento" class="nav-item  type1 nav-item--beleza-e-saude ms-beleza-e-saude">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl07_lnkDepartamento" title="Beleza e Saúde" class="nav-link" href="http://www.extra.com.br/BelezaSaude/?Filtro=C102"><b>Beleza e Saúde</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl08_liDepartamento" class="nav-item   nav-item--games ms-games">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl08_lnkDepartamento" title="Games" class="nav-link" href="http://www.extra.com.br/Games/?Filtro=C336"><b>Games</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl09_liDepartamento" class="nav-item  type1 nav-item--utilidades-domesticas ms-utilidades-domesticas">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl09_lnkDepartamento" title="Utilidades Domésticas" class="nav-link" href="http://www.extra.com.br/UtilidadesDomesticas/?Filtro=C371"><b>Utilidades Domésticas</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl10_liDepartamento" class="nav-item  type1 nav-item--esporte-e-lazer ms-esporte-e-lazer">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl10_lnkDepartamento" title="Esporte e Lazer" class="nav-link" href="http://www.extra.com.br/EsporteLazer/?Filtro=C418"><b>Esporte e Lazer</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl11_liDepartamento" class="nav-item   nav-item--calcados ms-calcados">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl11_lnkDepartamento" title="Calçados" class="nav-link" href="http://www.extra.com.br/Calcados/?Filtro=C448"><b>Calçados</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl12_liDepartamento" class="nav-item   nav-item--livros ms-livros">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl12_lnkDepartamento" title="Livros" class="nav-link" href="http://www.extra.com.br/livros/?Filtro=C484"><b>Livros</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl13_liDepartamento" class="nav-item   nav-item--ferramentas ms-ferramentas">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl13_lnkDepartamento" title="Ferramentas" class="nav-link" href="http://www.extra.com.br/Ferramentas/?Filtro=C827"><b>Ferramentas</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl14_liDepartamento" class="nav-item  type1 nav-item--dvds-e-blu-ray ms-dvds-e-blu-ray">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl14_lnkDepartamento" title="DVDs e Blu-Ray" class="nav-link" href="http://www.extra.com.br/dvdsebluray/?Filtro=C833"><b>DVDs e Blu-Ray</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl15_liDepartamento" class="nav-item   nav-item--automotivo ms-automotivo">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl15_lnkDepartamento" title="Automotivo" class="nav-link" href="http://www.extra.com.br/automotivo/?Filtro=C836"><b>Automotivo</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl16_liDepartamento" class="nav-item   nav-item--brinquedos ms-brinquedos">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl16_lnkDepartamento" title="Brinquedos" class="nav-link" href="http://www.extra.com.br/brinquedos/?Filtro=C977"><b>Brinquedos</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl17_liDepartamento" class="nav-item   nav-item--bebes ms-bebes">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl17_lnkDepartamento" title="Bebês" class="nav-link" href="http://www.extra.com.br/bebes/?Filtro=C983"><b>Bebês</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl18_liDepartamento" class="nav-item  type1 nav-item--linha-industrial ms-linha-industrial">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl18_lnkDepartamento" title="Linha Industrial" class="nav-link" href="http://www.extra.com.br/EletrodomesticosLinhaIndustrial/?Filtro=C1017"><b>Linha Industrial</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl19_liDepartamento" class="nav-item   nav-item--papelaria ms-papelaria">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl19_lnkDepartamento" title="Papelaria" class="nav-link" href="http://www.extra.com.br/Papelaria/?Filtro=C1639"><b>Papelaria</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl20_liDepartamento" class="nav-item  type1 nav-item--cama-mesa-e-banho ms-cama-mesa-e-banho">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl20_lnkDepartamento" title="Cama, Mesa e Banho" class="nav-link" href="http://www.extra.com.br/CamaMesaBanho/?Filtro=C1732"><b>Cama, Mesa e Banho</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl21_liDepartamento" class="nav-item   nav-item--relogios ms-relogios">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl21_lnkDepartamento" title="Relógios" class="nav-link" href="http://www.extra.com.br/Relogios/?Filtro=C1733"><b>Relógios</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl22_liDepartamento" class="nav-item   nav-item--moda ms-moda">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl22_lnkDepartamento" title="Moda" class="nav-link" href="http://www.extra.com.br/Moda/?Filtro=C1734"><b>Moda</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl23_liDepartamento" class="nav-item  type1 nav-item--malas-e-mochilas ms-malas-e-mochilas">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl23_lnkDepartamento" title="Malas e Mochilas" class="nav-link" href="http://www.extra.com.br/malasemochilas/?Filtro=C1813"><b>Malas e Mochilas</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl24_liDepartamento" class="nav-item   nav-item--perfumaria ms-perfumaria">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl24_lnkDepartamento" title="Perfumaria" class="nav-link" href="http://www.extra.com.br/Perfumaria/?Filtro=C1886"><b>Perfumaria</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl25_liDepartamento" class="nav-item   nav-item--tablets ms-tablets">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl25_lnkDepartamento" title="Tablets" class="nav-link" href="http://www.extra.com.br/Tablets/?Filtro=C2031"><b>Tablets</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl26_liDepartamento" class="nav-item   nav-item--natal ms-natal">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl26_lnkDepartamento" title="Natal" class="nav-link" href="http://www.extra.com.br/natal/?Filtro=C2042"><b>Natal</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl27_liDepartamento" class="nav-item   nav-item--joias ms-joias">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl27_lnkDepartamento" title="Joias" class="nav-link" href="http://www.extra.com.br/Joias/?Filtro=C2168"><b>Joias</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl28_liDepartamento" class="nav-item  type1 nav-item--produtos-de-limpeza ms-produtos-de-limpeza">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl28_lnkDepartamento" title="Produtos de Limpeza" class="nav-link" href="http://www.extra.com.br/ProdutosdeLimpeza/?Filtro=C2285"><b>Produtos de Limpeza</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl29_liDepartamento" class="nav-item   nav-item--pet-shop ms-pet-shop">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl29_lnkDepartamento" title="Pet Shop" class="nav-link" href="http://www.extra.com.br/PetShop/?Filtro=C2294"><b>Pet Shop</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl30_liDepartamento" class="nav-item   nav-item--alimentos ms-alimentos">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl30_lnkDepartamento" title="Alimentos" class="nav-link" href="http://www.extra.com.br/Alimentos/?Filtro=C2339"><b>Alimentos</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl31_liDepartamento" class="nav-item  type1 nav-item--instrumentos-musicais ms-instrumentos-musicais">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl31_lnkDepartamento" title="Instrumentos Musicais" class="nav-link" href="http://www.extra.com.br/InstrumentosMusicais/?Filtro=C2471"><b>Instrumentos Musicais</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl32_liDepartamento" class="nav-item   nav-item--viagens ms-viagens">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl32_lnkDepartamento" title="Viagens" class="nav-link" href="http://www.extra.com.br/Viagens/?Filtro=C2546"><b>Viagens</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl33_liDepartamento" class="nav-item  type1 nav-item--casa-e-construcao ms-casa-e-construcao">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl33_lnkDepartamento" title="Casa e Construção" class="nav-link" href="http://www.extra.com.br/construcao/?Filtro=C2547"><b>Casa e Construção</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl34_liDepartamento" class="nav-item   nav-item--bebidas ms-bebidas">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl34_lnkDepartamento" title="Bebidas" class="nav-link" href="http://www.extra.com.br/Bebidas/?Filtro=C2596"><b>Bebidas</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl35_liDepartamento" class="nav-item   nav-item--artesanato ms-artesanato">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl35_lnkDepartamento" title="Artesanato" class="nav-link" href="http://www.extra.com.br/Artesanato/?Filtro=C2599"><b>Artesanato</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl36_liDepartamento" class="nav-item  type1 nav-item--alameda-de-servicos ms-alameda-de-servicos">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl36_lnkDepartamento" title="Alameda de Serviços" class="nav-link" href="http://www.extra.com.br/AlamedadeServicos/?Filtro=C2673"><b>Alameda de Serviços</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl37_liDepartamento" class="nav-item  type1 nav-item--ar-e-ventilacao ms-ar-e-ventilacao">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl37_lnkDepartamento" title="Ar e Ventilação" class="nav-link" href="http://www.extra.com.br/ArVentilacao/?Filtro=C2809"><b>Ar e Ventilação</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl38_liDepartamento" class="nav-item  type1 nav-item--artigos-para-festas ms-artigos-para-festas">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl38_lnkDepartamento" title="Artigos para Festas" class="nav-link" href="http://www.extra.com.br/artigosparafestas/?Filtro=C2894"><b>Artigos para Festas</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl39_liDepartamento" class="nav-item   nav-item--audio ms-audio">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl39_lnkDepartamento" title="�?udio" class="nav-link" href="http://www.extra.com.br/audio/?Filtro=C3279"><b>�?udio</b></a>
+                                        </li>
+                                    
+                                        <li id="ctl00_TopBar_TopBar_rptDepartamento_ctl40_liDepartamento" class="nav-item   nav-item--decoracao ms-decoracao">
+                                            <a id="ctl00_TopBar_TopBar_rptDepartamento_ctl40_lnkDepartamento" title="Decoração" class="nav-link" href="http://www.extra.com.br/decoracao/?Filtro=C3359"><b>Decoração</b></a>
+                                        </li>
+                                    
+                            </ul>
+                        </nav>
+                        <div id="ctl00_TopBar_TopBar_pnlSubMenu">
+
+</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <hr />
+</div>
+
+
+
+
+        
+        
+        
+        
+        
+    <div id="ctl00_Conteudo_pnlAreaRoot" class="area-root">
+	<div id="ctl00_Conteudo_28" class="area-1">
+		
+<div class="box-busca busca busca-cnova buscaCNova">
+    <div class="wrapper wrapper-max-width wp">
+        <div class="search-bar barraBuscaCNova">
+            <div class="search-bar-wrapper wpr">
+                <div class="search-bar-control">
+                    <div class="search-bar-control__item search-field">
+                        <select class="" id="_ddlIdCategoriaClient_" />
+                        <input name="ctl00$Conteudo$ctl04$txtBusca" type="text" id="ctl00_Conteudo_ctl04_txtBusca" class="typeahead type1" spellcheck="false" size="20" accesskey="b" />
+                    </div>
+                    <div class="search-bar-control__item search-button ok">
+                        <button id="ctl00_Conteudo_ctl04_btnOK" class="bt ic-search" type="button"><span>Buscar</span></button>
+                    </div>
+                </div>
+            </div>
+            <ul class="control-bar marca">
+                <li class="control-bar__item busca-marca buscaMarca">
+                    <a href="/Site/BuscaMarca.aspx?KeepThis=true&TB_iframe=true&height=380&width=728" id="ctl00_Conteudo_ctl04_lnkPop" class="lnkPop bt">Busca por marca</a>
+                </li>
+                <li class="control-bar__item lista-casamento listaCasamento">
+                    <a id="ctl00_Conteudo_ctl04_lnkLcas" class="bt">Lista de Casamento</a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+    </div>
+</div>
+
+
+	</div><div id="ctl00_Conteudo_29" class="area-2">
+		<style type="text/css">
+.departamento .area-2{ padding-right: 0; padding-left: 0; }
+.banner-servico { background: #ac1925;  width: 100%; height: 50px; overflow: hidden; margin: 0;}
+.banner-servico .banner-cp .bnr{ position: relative; display: block; padding: 0; margin: 0; width: 1024px; margin: 0 auto; border: none;}
+.banner-servico .bnr-link {  display: block; width: 310px; height: 50px; }
+.banner-servico .servico{ background: url(https://www.extra-imagens.com.br/Banner/banner-faixa/servico/images/barra-servicos-ex-v1.gif) no-repeat center top; }
+.banner-servico .servico ul{ margin: 0; padding: 0; }
+.banner-servico .servico ul li{ float: left; margin: 0; padding: 0; }
+.servico li:nth-child(1) a {width: 240px;}
+.servico li:nth-child(2) a {width: 288px;margin: 0 30px;}
+.servico li:nth-child(3) a {width: 425px;}
+.home .area-1 { background: #ac1925; max-width: 100% !important;}
+@media screen and (max-width: 1024px) {
+
+.banner-servico{ display:none;}
+
+}
+
+</style>
+
+<div class="banner-servico">   
+  <div class="banner-cp"> 
+     <div class="bnr servico"> 
+        <ul>         
+        <li><a class="bnr-link" href="https://www.extra.com.br/listadecasamento/home.aspx?icid=132938" title="Crie sua Lista de Casamento"></a></li>  
+        <li><a class="bnr-link" href="https://www.extra.com.br/ClubeExtra/ClubeExtraHome.aspx?icid=132939" title="Conheça as vantagens do Clube Extra"></a></li>		
+ 		<li><a class="bnr-link" href="https://www.extra.com.br/CartaoExtra/cartao.aspx?icid=132924" title="Cartão Extra"></a></li>
+        </ul>
+      </div>                          
+  </div>
+</div>
+
+<div class="breadcrumbWrp">
+    <div class="breadcrumb" itemprop="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+        <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br"title="Extra.com.br" class="first"><span itemprop="name">Extra.com.br</span></a><meta itemprop="position" content="1"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/?Filtro=C56"><span itemprop="name">Informática</span></a><meta itemprop="position" content="2"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57"><span itemprop="name">Notebook</span></a><meta itemprop="position" content="3"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146"><span itemprop="name">Dell</span></a><meta itemprop="position" content="4"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/Intel-Core-i7/?Filtro=C56_C57_M146_V11168"><span itemprop="name">Processador: Intel Core i7</span></a><meta itemprop="position" content="5"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362"><span itemprop="name">Conexões: HDMI</span></a><meta itemprop="position" content="6"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359"><span itemprop="name">Conexões: Webcam integrada</span></a><meta itemprop="position" content="7"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247"><span itemprop="name">Conexões: Wireless</span></a><meta itemprop="position" content="8"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877"><span itemprop="name">Cor: Cinza</span></a><meta itemprop="position" content="9"/></span> > <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710"><span itemprop="name">Sistema operacional: Windows 10</span></a><meta itemprop="position" content="10"/></span> > <strong>Placa de Vídeo: NVIDIA GeForce</strong> 
+    </div>
+</div>
+	</div><div id="ctl00_Conteudo_30" class="area-3">
+
+	</div><div id="ctl00_Conteudo_31" class="area-4">
+		<div id="ctl00_Conteudo_34" class="area-4-1">
+			<input type="hidden" name="ctl00$Conteudo$hfIdControle" id="ctl00_Conteudo_hfIdControle" /><input type="hidden" name="ctl00$Conteudo$hfIdBannerCarrossel" id="ctl00_Conteudo_hfIdBannerCarrossel" /><div id="ctl00_Conteudo_ctl00_divSideBar" class="navigation">
+  <div id="ctl00_Conteudo_ctl00_divSideBarUnica1" class="mnav">
+
+
+
+
+
+
+        
+        
+        <h2 class="tit title1 informatica first">Informática</h2>
+        
+        
+        
+        
+        
+    
+        
+        
+        <h3 class="tit title2 informatica">Notebook <span class="qtd">(1) </span></h3>
+        
+        
+        
+        
+        
+    
+
+
+
+        <h3 class="tit title2 informatica"><a  href="http://www.extra.com.br/Informatica/AcessoriosePerifericos/acessoriosparanotebook/?Filtro=C56_C72_C343">Acessórios para Notebook</a></h3>
+    
+        <h3 class="tit title2 informatica"><a  href="http://www.extra.com.br/malasemochilas/Mochilasparaviagem/mochilasparanotebook/?Filtro=C1813_C1830_C265">Mochilas para Notebook</a></h3>
+    
+<div id="ctl00_Conteudo_ctl00_ctl01_pnlRefino" class="pnlFilter">
+				
+    
+    
+    
+    <div class="fBrands">
+        <h3 class="title2 "><b>Marca</b></h3>
+        <ul id="ctl00_Conteudo_ctl00_ctl01_ulMarca" class=" list2">
+            
+                    <li class="last destaqueMarcas filter checked"><a  href="http://www.extra.com.br/Informatica//Notebook//Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003"> Dell <span class="qtd">(1)</span></a></li>
+                
+            
+            
+            
+        </ul>
+                
+        <span id="ctl00_Conteudo_ctl00_ctl01_spanMarcaTodasMultiplo" class="clean">
+            <a id="ctl00_Conteudo_ctl00_ctl01_lnkMarcaTodasMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_V11168_V3362_V3359_V93247_V2877_V89710_V16003">limpar</a></span>
+    </div>
+    <div class="fValue">
+        
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl00_h5Refino" class="">
+                    Processador:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl00_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V3362_V3359_V93247_V2877_V89710_V16003"> Intel Core i7 <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                <span id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl00_spanCampoValorTodosMultiplo" class="clean">
+                    <a id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl00_lnkCampoValorTodosMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V3362_V3359_V93247_V2877_V89710_V16003">limpar</a></span>
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl01_h5Refino" class="">
+                    Cor:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl01_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V89710_V16003"> Cinza <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                <span id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl01_spanCampoValorTodosMultiplo" class="clean">
+                    <a id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl01_lnkCampoValorTodosMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V89710_V16003">limpar</a></span>
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl02_h5Refino" class="">
+                    Sistema operacional:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl02_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V16003"> Windows 10 <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                <span id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl02_spanCampoValorTodosMultiplo" class="clean">
+                    <a id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl02_lnkCampoValorTodosMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V16003">limpar</a></span>
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl03_h5Refino" class="">
+                    Conexões:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl03_ulREfino" class=" list2">
+                    
+                    
+                            <li class="filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V3368"> Bluetooth <span class="qtd">(1)</span></a></li>
+                        
+                            <li class="filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3359_V93247_V2877_V89710_V16003"> HDMI <span class="qtd">(1)</span></a></li>
+                        
+                            <li class="filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V2877_V89710_V16003"> Wireless <span class="qtd">(1)</span></a></li>
+                        
+                            <li class="filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V3356"> Slot para cartão de memória <span class="qtd">(1)</span></a></li>
+                        
+                            <li class="last last filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V93247_V2877_V89710_V16003"> Webcam integrada <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                <span id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl03_spanCampoValorTodosMultiplo" class="clean">
+                    <a id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl03_lnkCampoValorTodosMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V2877_V89710_V16003">limpar</a></span>
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl04_h5Refino" class="">
+                    Memória RAM:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl04_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V15703"> 6 a 8 GB <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl05_h5Refino" class="">
+                    Capacidade do HD:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl05_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V15706"> De 501 a 1TB <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl06_h5Refino" class="">
+                    Tamanho da tela:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl06_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V15708"> Acima de 15 polegadas <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl07_h5Refino" class="">
+                    Placa de Vídeo:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl07_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter checked"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710"> NVIDIA GeForce <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                <span id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl07_spanCampoValorTodosMultiplo" class="clean">
+                    <a id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl07_lnkCampoValorTodosMultiplo" rel="nofollow" href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710">limpar</a></span>
+            
+                <h4 id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl08_h5Refino" class="">
+                    Tipo:</h4>
+                <ul id="ctl00_Conteudo_ctl00_ctl01_rptRefino_ctl08_ulREfino" class=" list2">
+                    
+                    
+                            <li class="last last filter"><a  href="http://www.extra.com.br/Informatica/Notebook/Dell/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_V96106"> Notebook Gamer <span class="qtd">(1)</span></a></li>
+                        
+                    
+                </ul>
+                
+            
+    </div>
+    <div class="fPrice">
+        <div id="ctl00_Conteudo_ctl00_ctl01_pnlFaixaPreco" class="pnlPrice">
+					
+            <h3 class="title2 "><b>Faixa de Preço</b></h3>
+            <ul id="ctl00_Conteudo_ctl00_ctl01_ulFaixaPreco" class="list2 ">
+                
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        <li class="last"><a  href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_P1265">Acima de 4.000 <span class="qtd">(1)</span></a></li>
+                    
+                
+                
+            </ul>
+        
+				</div>
+    </div>
+
+    <div class="fPercentage">
+        
+    </div>
+
+    <div class="fEntrega">
+        
+    </div>
+
+    <div class="fOferta">
+        
+    </div>
+
+
+    <div id="ctl00_Conteudo_ctl00_ctl01_ulRating" class="fRating">
+        
+        <h3 class="title2"><b>Avaliações</b></h3>
+        <ul class="list2">
+            
+            
+            
+            
+            
+            <li class="fr00"><a  href="http://www.extra.com.br/Informatica/Notebook/?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003_R0"><span class="smallRating"><span class="rating r00"></span><span class="qtdReviews">(1)</span></span></a></li>
+            
+        </ul>
+    </div>
+
+			</div>
+</div>
+</div>
+<div class="bnr bnr-sky">
+  <div class="bnr-wrap">
+    <div class="bnr-link" id="dfp_sky_mid"></div>
+  </div>
+</div>
+		</div><div id="ctl00_Conteudo_35" class="area-4-2">
+			<div id="ctl00_Conteudo_36" class="area-4-2-1">
+				<h1 class="tit">Notebook - Dell - Processador: Intel Core i7 e Conexões: HDMI</h1>
+			</div><div id="ctl00_Conteudo_37" class="area-4-2-2">
+				<div id='RecomendacaoPorCategoria'> </div>
+<div class="bnr bnr-super">
+  <div class="bnr-wrap">
+    <div class="bnr-link" id="dfp_superbanner_top"></div>
+  </div>
+</div>
+			</div><div id="ctl00_Conteudo_1652" class="area-4-2-3">
+
+			</div><div id="ctl00_Conteudo_38" class="area-4-2-4">
+				
+<div class="main">
+    
+    <div id="divAlerta" class="erro" style="display:none;"></div>
+    <div id="ctl00_Conteudo_ctl02_divAlertaLista" class="alerta" style="display:none;"></div>
+    <div id="ctl00_Conteudo_ctl02_divItensPagina_Ordenacao_Superior" class="sub">            
+        <div id="ctl00_Conteudo_ctl02_divOrdenacao" class="resultadoBusca">
+            <div class="filtro">
+                <fieldset class="ordenacao">
+                    <label for="ctl00_Conteudo_ctl02_lstOrdenacaoSuperior">Ordenar por:</label>
+                    <select name="ctl00$Conteudo$ctl02$lstOrdenacaoSuperior" id="ctl00_Conteudo_ctl02_lstOrdenacaoSuperior" onchange="Envia(this)">
+					<option value="">Selecione</option>
+					<option value="precoCrescente">Menor pre&#231;o</option>
+					<option value="precoDecrescente">Maior pre&#231;o</option>
+					<option selected="selected" value="_MaisVendidos">Mais vendidos</option>
+					<option value="maisBemAvaliados">Mais bem avaliados</option>
+					<option value="nomeCrescente">A - Z</option>
+					<option value="nomeDecrescente">Z - A</option>
+
+				</select>
+                </fieldset>
+                <!--<fieldset class="itensPag">
+		            <label for="ctl00_Conteudo_ctl02_ddlItensPaginaSuperior">Itens por página:</label>
+			        <select name="ctl00$Conteudo$ctl02$ddlItensPaginaSuperior" id="ctl00_Conteudo_ctl02_ddlItensPaginaSuperior" onchange="EnviaItensPagina(this)">
+					<option value="12">12</option>
+					<option value="16">16</option>
+					<option value="20">20</option>
+
+				</select>
+		        </fieldset>-->
+		        
+		        <script type="text/javascript">preview();</script>
+            </div>
+            <div class="pagination">
+				<ul class="ListaPaginas"><li class="first"><span>Primeira</span></li><li class="back"><span>Anterior</span></li><li class="atual"><strong>1</strong></li><li class="next"><span>Próxima</span></li><li class="last"><span>Última</span></li></ul>
+				
+            </div>
+            <div class="resultado">
+				<p>Produtos encontrados:<strong>1</strong></p>
+            </div>
+        </div>
+        
+        <div id="ctl00_Conteudo_ctl02_divItensPagina" class="filtroBusca">
+			<p class="comparar">
+			    <a id="ctl00_Conteudo_ctl02_lnkCompararSuperior" title="Comparar" class="bt" href="javascript:Comparar(&quot;ctl00_Conteudo_ctl02_hdnComparacaoProdutos&quot;,window.location);">Comparar</a>
+			</p>
+			<p>Clique em &quot;Comparar&quot; para exibir a comparação: <strong><span id="NumeroSuperior"></span></strong> produto(s) selecionado(s)</p>
+		</div>
+		
+		<div id="ctl00_Conteudo_ctl02_divAdicionarListaCasamento" class="addListaCasamento">
+			<p class="adicionar"><a id="ctl00_Conteudo_ctl02_lnkAdicionarLcas" title="Adicionar" class="bt" href="javascript:AdicionarLcas(&quot;ctl00_Conteudo_ctl02_hdnListaCasamento&quot;,window.location, &quot;https://carrinho.extra.com.br&quot;);">Adicionar</a></p>
+			<p class="text">Produto(s) selecionado(s) <strong><span id="NumeroSuperiorLcas"></span></strong> para adicionar &agrave; Lista de Casamento.</p>
+		</div>
+    </div>
+  
+	
+
+	<div id="ctl00_Conteudo_ctl02_DivAdicionaListaCasamento" class="vitrine">
+	    <input type="hidden" name="ctl00$Conteudo$ctl02$hdnComparacaoProdutos" id="ctl00_Conteudo_ctl02_hdnComparacaoProdutos" />
+		<input type="hidden" name="ctl00$Conteudo$ctl02$hdnListaCasamento" id="ctl00_Conteudo_ctl02_hdnListaCasamento" />
+	<div class="lista-produto prateleira">
+					<ul class="vitrineProdutos"><li id="ctl00_Conteudo_ctl02_notebook-gamer-dell-alienware-aw-17r3-a10-com-nvidia-geforce-gtx-970m-intel-core-i7-6700hq-8gb-1tb-led-full-hd-17-3-e-windows-10-9248074" class="informatica produtoIndisponivel first"><div class="hproduct"><a class="link url" title="Notebook Gamer Dell Alienware AW-17R3-A10 com NVIDIA GeForce GTX 970M, Intel® Core™ i7-6700HQ, 8GB, 1TB, LED Full HD 17.3�? e Windows 10" rel="product" href="http://www.extra.com.br/Informatica/Notebook/notebook-gamer-dell-alienware-aw-17r3-a10-com-nvidia-geforce-gtx-970m-intel-core-i7-6700hq-8gb-1tb-led-full-hd-17-3-e-windows-10-9248074.html?recsource=busca-int&amp;rectype=busca-57"><strong class="category">Informática</strong> <span class="productImage"><img src="https://www.extra-imagens.com.br/App_Themes/Extra/Img/blank.gif" data-src="http://www.extra-imagens.com.br/Informatica/Notebook/9248074/569407366/notebook-gamer-dell-alienware-aw-17r3-a10-com-nvidia-geforce-gtx-970m-intel-core-i7-6700hq-8gb-1tb-led-full-hd-17-3-e-windows-10-9248074.jpg" class="lazy" width="292" height="292" alt="Notebook Gamer Dell Alienware AW-17R3-A10 com N..." id="569407366" /></span> <strong class="name fn">Notebook Gamer Dell Alienware AW-17R3-A10 com NVIDIA GeForce GTX 970M, Intel® Core™ i7-6700HQ, 8GB, 1TB, LED Full HD 17.3�? e Windows 10</strong> <span class="indisponivel availability">Produto indisponível no momento</span> <span class="avise">Avise-me quando chegar no estoque</span></a><fieldset class="compareNow"><input id="ctl00_Conteudo_ctl02_ctl18" type="checkbox" name="ctl00$Conteudo$ctl02$ctl18" onclick="MarcarComparacao(5799168, this.checked);" /><label for="ctl00_Conteudo_ctl02_ctl18">Comparar com outros produtos</label></fieldset> </div></li></ul>
+				</div></div>
+    
+	<div id="ctl00_Conteudo_ctl02_divItensPagina_Ordenacao_Inferior" class="sub inferior">            
+		<div class="filtroBusca">
+			<!--fieldset>
+				<label for="itens-pagina">Itens por página:</label>
+				<select name="ctl00$Conteudo$ctl02$ddlItensPaginaInferior" id="ctl00_Conteudo_ctl02_ddlItensPaginaInferior" onchange="EnviaItensPagina(this)">
+					<option value="12">12</option>
+					<option value="16">16</option>
+					<option value="20">20</option>
+
+				</select>
+			</fieldset-->
+			<p class="comparar">
+			    <a id="ctl00_Conteudo_ctl02_lnkCompararInferior" title="Comparar" class="bt" href="javascript:Comparar(&quot;ctl00_Conteudo_ctl02_hdnComparacaoProdutos&quot;,window.location);">Comparar</a>
+			</p>
+			<p>Clique em &quot;Comparar&quot; para exibir a comparação: <strong><span id="NumeroInferior"></span></strong> produto(s) selecionado(s)</p>
+		</div>
+		<div id="ctl00_Conteudo_ctl02_divBuscaResultadoInferior" class="result-busca">
+		    <div class="pagination">
+			    <ul class="ListaPaginas"><li class="first"><span>Primeira</span></li><li class="back"><span>Anterior</span></li><li class="atual"><strong>1</strong></li><li class="next"><span>Próxima</span></li><li class="last"><span>Última</span></li></ul>
+			    
+			</div>
+			<!-- fieldset>
+				<label>Ordenar por:</label>
+				<select name="ctl00$Conteudo$ctl02$lstOrdenacaoInferior" id="ctl00_Conteudo_ctl02_lstOrdenacaoInferior" onchange="Envia(this)">
+					<option value="">Selecione</option>
+					<option value="_MaisVendidos">Mais vendidos</option>
+					<option value="maisBemAvaliados">Mais bem avaliados</option>
+					<option selected="selected" value="nomeCrescente">A - Z</option>
+					<option value="nomeDecrescente">Z - A</option>
+
+				</select>
+			</fieldset -->
+		</div>
+	</div>    
+</div> 
+<script type="text/javascript">/* <![CDATA[ */
+function Envia(form) {valor = form.value; Url = "?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003&Ordenacao="+valor;window.location=Url;} function EnviaItensPagina(form) {valor = form.options[form.selectedIndex].text; Url = "Busca.aspx?Filtro=C56_C57_M146_V11168_V3362_V3359_V93247_V2877_V89710_V16003&Ordenacao=&numPorPagina="+valor;window.location=Url;}CarregaTelaLista("ctl00_Conteudo_ctl02_hdnComparacaoProdutos","ctl00_Conteudo_ctl02_hdnListaCasamento");
+/* ]]> */
+</script>
+<div class="bnr bnr-adaptavel">
+  <div class="bnr-wrap">
+    <div class="bnr-link" id="BnrAdsense"></div>
+  </div>
+</div>
+			</div>
+		</div>
+	</div><div id="ctl00_Conteudo_979" class="area-5">
+
+	</div><div id="ctl00_Conteudo_32" class="area-6">
+
+	</div>
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+    <div class="footer-wrapper footer-wrapper-atendimento">
+   <div class="wrapper wrapper-max-width">
+      <div class="footer-row footer-atendimento">
+         <div class="footer-col footer-atendimento__item footer-atendimento__item--televendas only-mobile">
+            <div class="content box-televendas">
+               <h3 class="title">Televendas</h3>
+               <div class="content">
+                  <p class="description">Capitais e regiões metropolitanas</p>
+                  <div class="btn-container">
+                     <span class="btn-footer btn-expanded">
+                     <span class="ic-tel-menu"></span>
+                     <span class="footer-text">Ligar para 4003-2773</span>
+                     </span>
+                  </div>
+                  <p class="caption">
+                     Horário de funcionamento:<br>
+                     Segunda a sexta-feira 07:30 às 21:30<br>
+                     Sábados 08:00h às 20:00h
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="footer-col footer-atendimento__item footer-atendimento__item--atendimento">
+            <ul class="content box-atendimento">
+               <li class="box-atendimento__item box-atendimento__item--atendimento only-desktop">
+                  <h3 class="title">Atendimento</h3>
+                  <div class="content">
+                     <p>
+                        Site: <span><strong>4003-3383</strong></span><br>
+                        Loja Física: <span><strong>0800 11 50 60</strong></span><br>
+                        Dúvidas sobre cadastro, pedidos,<br>
+                        formas de pagamento e prazo<br>
+                        de entrega? <a title="Central de Atendimento" href="//www.extra.com.br/CentraldeAtendimento/home.aspx">Tire suas dúvidas</a>.
+                     </p>
+                  </div>
+               </li>
+               <li class="box-atendimento__item box-atendimento__item--televendas only-desktop">
+                  <h3 class="title">Televendas</h3>
+                  <div class="content">
+                     <p>
+                        <span><strong>4003-0363</strong></span><br>
+                        Horário de funcionamento:<br>
+                        Segunda a sexta-feira <b>08:00h às 23:00h</b><br>
+                        Sábados <b>08:00h às 20:00h</b>
+                     </p>
+                  </div>
+               </li>
+               <li class="box-atendimento__item box-atendimento__item--social-media">
+                  <h3 class="title">Redes Sociais</h3>
+                  <div class="content">
+                     <ul class="footer-social">
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="Facebook" href="//pt-br.facebook.com/familiaextra?icid=253404">
+                           <span class="ic-facebook"></span></a>
+                        </li>
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="Twitter" href="//twitter.com/familiaextra?icid=253405">
+                           <span class="ic-twitter"></span></a>
+                        </li>
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="YouTube" href="http://www.youtube.com/tudoextra?icid=253406">
+                           <span class="ic-youtube"></span></a>
+                        </li>
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="Pinterest" href="//www.pinterest.com/familiaextra/?icid=253407">
+                           <span class="ic-pinterest"></span></a>
+                        </li>
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="Google+" href="//plus.google.com/+extracombr?icid=253370">
+                           <span class="ic-google-plus"></span></a>
+                        </li>
+                        <li class="footer-social__item"><a class="social-link" target="_blank" title="Blog" href="//tudo.extra.com.br/">
+                           <span class="ic-blog"></span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-col footer-atendimento__item footer-atendimento__item--duvidas">
+            <ul class="box-atendimento">
+               <li class="box-atendimento__item box-atendimento__item--box-ajuda">
+                  <div class="box-atendimento-ajuda only-desktop">
+                     <h3 class="title">Ajuda</h3>
+                     <div class="content">
+                        <ul class="list-text">
+                           <li class="list-text__item"><a class="list-link" title="Atendimento Loja Física" href="http://faleconosco.grupopaodeacucar.com.br/extralojas/Home/FaleConosco?icid=131464">Atendimento Loja Física</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Mapa do Site" href="//www.extra.com.br/mapadosite/mapadosite.aspx?icid=253372">Mapa do Site</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Prazos e locais de entrega" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?lista=8&amp;icid=253373">Prazos e locais de entrega</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Política de Troca e Devolução" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?topico=298&amp;icid=253374">Política de Troca e Devolução</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Política de Privacidade" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?topico=14&amp;icid=253375">Política de Privacidade</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Nota Fiscal Paulista" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?topico=16&amp;icid=253376">Nota Fiscal Paulista</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Termos e Condições de Uso" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?topico=996">Termos e Condições de Uso</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Quantidade de itens por pedido" href="//www.extra.com.br/CentraldeAtendimento/home.aspx?topico=1017">Quantidade de itens por pedido</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="box-atendimento-duvida only-mobile">
+                     <h3 class="title">Dúvidas</h3>
+                     <div class="content">
+                        <ul class="list-text">
+                           <li class="list-text__item"><a class="list-link" title="Atendimento Loja Física" href="//m.extra.com.br/#/atendimento">Atendimento</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Mapa do Site" href="//m.extra.com.br/#/atendimento/politica-privacidade">Política de privacidade</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="box-atendimento__item box-atendimento__item--meus-pedidos only-desktop">
+                  <h3 class="title">Meus pedidos</h3>
+                  <div class="content">
+                     <ul class="list-text">
+                        <li class="list-text__item"><a class="list-link" title="Meus Pedidos" href="https://carrinho.extra.com.br/Site/Login.aspx?ReturnUrl=%2fSite%2fMeusPedidos.aspx&amp;icid=253377">Acompanhe seus pedidos</a></li>
+                        <li class="list-text__item"><a class="list-link" title="Editar Meu Cadastro" href="https://carrinho.Extra.com.br/Site/MeuPerfil.aspx?icid=253378">Editar cadastro</a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-col footer-atendimento__item footer-atendimento__item--institucional">
+            <ul class="box-atendimento">
+               <li class="box-atendimento__item box-atendimento__item--extra">
+                  <div class="box-atendimento-extra only-desktop">
+                     <h3 class="title">Extra</h3>
+                     <div class="content">
+                        <ul class="list-text">
+                           <!--li class="list-text__item"><a class="list-link" title="Sobre o Extra" href="http://www.familiaextra.com.br/familia-extra/sobre-o-extra/?icid=253379">Sobre o Extra</a></li-->
+                           <li class="list-text__item"><a class="list-link" title="Serviços" href="//www.extra.com.br/AlamedadeServicos/?Filtro=C2673&amp;icid=253381">Serviços</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Blog Extra" href="//tudo.extra.com.br/?icid=253382">Blog Extra</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Trabalhe Conosco" href="//www.extra.com.br/trabalhe-conosco/vagas.aspx?icid=253384">Trabalhe conosco</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Lista de Casamento" href="http://casamento.extra.com.br?icid=253385">Lista de casamento</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Anuncie com a Gente" href="http://www.cnovaads.com.br/" target="_blank">Anuncie com a Gente</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Venda seus produtos no Extra" href="//www.extra.com.br/marketplace/venda-no-extra.aspx?icid=253386">Venda seus produtos no Extra</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Palavras mais Buscadas" href="//buscando.extra.com.br/?nid=200974">Palavras mais Buscadas</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Prepare-se para o Black Friday 2017" href="//www.extra.com.br/promocoes/blackfriday.aspx?nid=132949">Prepare-se para o Black Friday 2017</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="box-atendimento-extra-mobile only-mobile">
+                     <h3 class="title">Outras Informações</h3>
+                     <div class="content">
+                        <ul class="list-text">
+                           <li class="list-text__item"><a class="list-link" title="Sobre o Extra" href="https://m.extra.com.br/#/atendimento/sobre">Sobre o Extra</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Marcas Recomendadas" href="https://m.extra.com.br/#/atendimento/site-seguro">Site Seguro</a></li>
+                           <li class="list-text__item"><a class="list-link" title="Serviços" href="//www.deliveryextra.com.br/">Extra alimentos</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+               <li class="box-atendimento__item box-atendimento__item--solucoes only-desktop">
+                  <h3 class="title">Soluções</h3>
+                  <div class="content">
+                     <ul class="list-text">
+                        <li class="list-text__item"><a class="list-link" title="Venda no Extra" href="//www.extra.com.br/marketplace/venda-no-extra.aspx?icid=253386">Marketplace</a></li>
+                     </ul>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-col footer-atendimento__item footer-atendimento__item--app only-desktop">
+            <ul class="box-atendimento">
+               <li class="box-atendimento__item box-atendimento__item--app">
+                  <div class="content">
+                     <div class="footer-image footer-image-app">
+                        <div class="footer-image-imagewrap">
+                           <img class="footer-image-image" alt="Aplicativo mobile" data-src="//www.extra-imagens.com.br/App_Themes/Extra/img/footerDevicesTwo.png" src="//www.extra-imagens.com.br/App_Themes/Extra/img/footerDevicesTwo.png">
+                        </div>
+                        <div class="footer-image-blocktext">
+                           <p class="title">Baixe o aplicativo</p>
+                           <p class="footer-image-text">
+                              Compre direto<br>
+                              do celular!<br>
+                              Baixe o aplicativo:
+                           </p>
+                           <ul class="footer-image-list">
+                              <li class="footer-image-item"><a class="footer-image-link" href="//play.google.com/store/apps/details?id=com.novapontocom.extra&amp;referrer=utm_campaign%3DAplicativo_Home%26trackingcode%3Db46ge05p%26utm_source%3DExtra%26utm_medium%3DAplicativos_home%26utm_term%3Dapp%2520extra&amp;icid=253388">Android</a></li>
+                              <li class="footer-image-item"><a class="footer-image-link" href="http://c00.adobe.com/704eaf67bb9dbda181ff7a099be55ab37c2c46c0cc1e86f7bfd49bad4574e5e1/b46ge05p/i/430650221?icid=253389">iPhone</a></li>
+                              <li class="footer-image-item"><a class="footer-image-link" href="http://www.windowsphone.com/pt-br/store/app/extra-com-br/a68484f7-eb9a-429e-a82a-33e9f685d485?icid=253390">Windows Phone</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="box-atendimento__item box-atendimento__item--cartao">
+                  <div class="content">
+                     <div class="footer-image footer-image-cartao">
+                        <div class="footer-image-imagewrap">
+                           <img class="footer-image-image" alt="Cartão Extra" data-src="//www.extra-imagens.com.br/App_Themes/Extra/img/footerCartoesTwo.png" src="//www.extra-imagens.com.br/App_Themes/Extra/img/footerCartoesTwo.png">
+                        </div>
+                        <div class="footer-image-blocktext">
+                           <h3 class="title">Cartão Extra</h3>
+                           <div class="content">
+                              <p class="footer-image-text">Parcele em até 24x iguais.</p>
+                              <ul class="footer-image-list">
+                                 <li class="footer-image-item"><a class="footer-image-link" href="//www.extra.com.br/CartaoExtra/cartao.aspx?icid=253391">Peça já o seu</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="footer-wrapper footer-wrapper-condicao">
+   <div class="wrapper wrapper--max-width">
+      <div class="footer-row footer-condicao-pagamento">
+         <div class="wrapper footer-condicao-pagamento-wrapper">
+            <div class="footer-col footer-condicao-pagamento__item footer-condicao-pagamento__item--cartao">
+               <p class="title">Formas de Pagamento <small>(exceto alimentos e bebidas)</small></p>
+               <div class="content">
+                  <ul class="group-icons">
+                     <li class="group-icons__item">
+                        <p class="title">Cartões do GPA</p>
+                        <ul class="list-icons">
+                           <li class="list-icons__item">
+                              <span title="Grupo Pão de Açucar" class="ic-flag ic-flag--gpa"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Pontofrio" class="ic-flag ic-flag--pontofrio"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Extra" class="ic-flag ic-flag--extra"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Multi Cash" class="ic-flag ic-flag--multi-cash"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Multi Empresarial" class="ic-flag ic-flag--multi-empresarial"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Multi Cheque" class="ic-flag ic-flag--multi-cheque"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Multi Benefícios" class="ic-flag ic-flag--multi-beneficios"></span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="group-icons__item">
+                        <p class="title">Débito</p>
+                        <ul class="list-icons">
+                           <li class="list-icons__item">
+                              <span title="Itaú" class="ic-flag ic-flag--itau"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Bradesco" class="ic-flag ic-flag--bradesco"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Banco do Brasil" class="ic-flag ic-flag--banco-brasil"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Visa Electron" class="ic-flag ic-flag--visa-electron"></span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="group-icons__item">
+                        <p class="title">Crédito</p>
+                        <ul class="list-icons">
+                           <li class="list-icons__item">
+                              <span title="Visa" class="ic-flag ic-flag--visa"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Mastercard" class="ic-flag ic-flag--mastercard"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="American Express" class="ic-flag ic-flag--american-express"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Dinners Club" class="ic-flag ic-flag--dinners"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Elo" class="ic-flag ic-flag--elo"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Hipercard" class="ic-flag ic-flag--hipercard"></span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="group-icons__item">
+                        <p class="title">Outras formas</p>
+                        <ul class="list-icons">
+                           <li class="list-icons__item">
+                              <span title="Masterpass" class="ic-flag ic-flag--masterpass"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Visa Checkout" class="ic-flag  ic-flag--visacheckout"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <span title="Boleto" class="ic-flag ic-flag--boleto"></span>
+                           </li>
+                           <li class="list-icons__item">
+                              <a href="//www.extra.com.br/ajuda/paypal.aspx">
+                              <span title="Paypal" class="ic-flag ic-flag--paypal"></span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-col footer-condicao-pagamento__item footer-condicao-pagamento__item--seguranca">
+               <p class="title">Segurança</p>
+               <div class="content">
+                  <p class="title">Segurança Auditada e aprovada</p>
+                  <ul class="list-icons">
+                     <li class="list-icons__item">
+                        <span title="Internet Segura" class="ic-flag ic-flag--internet-segura"></span>
+                     </li>
+                     <li class="list-icons__item">
+                        <span title="Nota Fiscal Paulista" class="ic-flag ic-flag--nota-fiscal"></span>
+                     </li>
+                     <li class="list-icons__item">
+                        <span title="Compra Segura Paypal" class="ic-flag ic-flag--compra-segura"></span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-row footer-condicao-legal">
+         <div class="wrapper footer-condicao-legal-wrapper">
+            <div class="footer-col footer-condicao-legal__item footer-condicao-legal__condicoes">
+               <div class="footer-condicao-legal-condicoes__item footer-condicao-legal__description">
+                  <p class="description">Preços e condições exclusivos para o extra.com.br (exceto alimentos e bebidas) e para o televendas (exceto alimentos e bebidas), podendo sofrer alterações sem prévia notificação.</p>
+               </div>
+               <div class="footer-condicao-legal-condicoes__item footer-condicao-legal__version">
+                  <p class="title">Escolha sua versão do site: Desktop ou Mobile Site</p>
+                  <ul class="footer-icon-group">
+                     <li class="footer-icon-group__item">
+                        <a class="footer-version__link footer-version__link--desktop active" title="Desktop" href="//www.extra.com.br/?icid=253392">
+                        <span class="ic-version ic-version--desktop active">Desktop</span>
+                        </a>
+                     </li>
+                     <li class="footer-icon-group__item">
+                        <a class="footer-version__link footer-version__link--mobile" title="Mobile" href="https://m.extra.com.br/?icid=253393">
+                        <span class="ic-version ic-version--mobile">Mobile</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-col footer-condicao-legal__item footer-condicao-legal__copyright">
+               <div class="footer-legal-company">
+                  <p class="description">
+                     <span class="highlight">CNOVA Comércio Eletrônico S.A.</span> | <a class="footer-link highlight" title="Extra.com.br" href="//www.extra.com.br?icid=253394">www.extra.com.br</a> | Rua João Pessoa, n° 83 - Piso Mezanino - Sala 02 |  São Caetano do Sul - SP - CEP: 09520-010 - CNPJ: 07.170.938/0001-07 | Inscrição Estadual: 636.330.646.110 | Telefone: (11) 4003-3383 | <a class="footer-link highlight" title="Filiais" href="//www.extra-imagens.com.br/pdf/nossasFiliais.pdf">Nossas Filiais / </a> <a class="footer-link highlight" title="Filiais" href="//localizador.extra.com.br/storeSearch/?organization=EXTRA">Lojas Físicas</a>. Observação: Ao utilizar o meio de pagamento Primeira Compra, a compra de garantias estendidas de produtos somente poderão ser realizadas em conjunto com o produto.
+                  </p>
+               </div>
+            </div>
+            <div class="footer-col footer-condicao-legal__item footer-condicao-legal__plataforma">
+               <div class="footer-legal-eplataforma">
+                  <p class="description">
+                     Powered by
+                     <img alt="e-hub" title="e-hub" class="" data-src="//www.extra-imagens.com.br/App_Themes/Extra/img/e-hub-logo.png" src="//www.extra-imagens.com.br/App_Themes/Extra/img/e-hub-logo.png">
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<span id="ctl00_BottomBar_BottomBar_lblDataProcessamento" title="10/10/2017 00:00:51"></span>
+<span id="ctl00_BottomBar_BottomBar_lblIdProcessamento" title="123456, 123456"></span>
+
+
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var __nomeSite = 'Extra.com';var __QtdMaximaProdutosComparacao = '3';var __urlCarrinho = 'https://carrinho.extra.com.br';AtualizaItensCookie(null);//]]>
+</script>
+
+                <script type='text/javascript'>
+                    (function() {
+                        var autocompCategsAjax = new Search.Autocomplete.AutocompCategoriesAjax({ server: 'https://api-b2c.extra.com.br/Catalogo/V2/' });
+                        var livePriceAjax = new Search.Autocomplete.LivePriceAjax({ server: 'https://preco.api-extra.com.br/V1/' });
+                        var productDetailsAjax = new Search.Autocomplete.ProductDetailsAjax({ server: 'https://rec.extra.com.br/productdetails' });
+                        var autocomp = new Search.Autocomplete.AutocompleteComponent({
+                            solrOrAlgolia: true,
+                            appId: 'OKADMU8JNY',
+                            apiKey: 'c19766537b292b1ece46befc8d4b92a6',
+                            searchTermHitsCountLimit: 8,
+                            productHitsCountLimit: 3,
+                            solrServer: 'https://busca.api-extra.com.br/Produtos/',
+                            detailsPage: 'https://produto.extra.com.br',
+                            searchPage: 'https://buscando.extra.com.br',
+                            imageServer: 'https://www.extra-imagens.com.br',
+                            autocompCategsAjax: autocompCategsAjax,
+                            livePriceAjax: livePriceAjax,
+                            productDetailsAjax: productDetailsAjax,
+                            selCategEl: $('#_ddlIdCategoriaClient_'),
+                            txtEl: $('#ctl00_TopBar_TopBar_TxtBuscaFlex_ctl00_txtBusca'),
+                            btnEl: $('#ctl00_TopBar_TopBar_TxtBuscaFlex_ctl00_btnOK'),
+                            cookie: 'IPI-Extra.com',
+                            tagueamentoServer: 'https://analytics.api-extra.com.br/eventstracking/trackevent/'
+                        });
+                        autocomp.initialize();
+                    })();
+                </script>
+                <script type='text/javascript'>
+                    (function() {
+                        var autocompCategsAjax = new Search.Autocomplete.AutocompCategoriesAjax({ server: 'https://api-b2c.extra.com.br/Catalogo/V2/' });
+                        var livePriceAjax = new Search.Autocomplete.LivePriceAjax({ server: 'https://preco.api-extra.com.br/V1/' });
+                        var productDetailsAjax = new Search.Autocomplete.ProductDetailsAjax({ server: 'https://rec.extra.com.br/productdetails' });
+                        var autocomp = new Search.Autocomplete.AutocompleteComponent({
+                            solrOrAlgolia: true,
+                            appId: 'OKADMU8JNY',
+                            apiKey: 'c19766537b292b1ece46befc8d4b92a6',
+                            searchTermHitsCountLimit: 8,
+                            productHitsCountLimit: 3,
+                            solrServer: 'https://busca.api-extra.com.br/Produtos/',
+                            detailsPage: 'https://produto.extra.com.br',
+                            searchPage: 'https://buscando.extra.com.br',
+                            imageServer: 'https://www.extra-imagens.com.br',
+                            autocompCategsAjax: autocompCategsAjax,
+                            livePriceAjax: livePriceAjax,
+                            productDetailsAjax: productDetailsAjax,
+                            selCategEl: $('#_ddlIdCategoriaClient_'),
+                            txtEl: $('#ctl00_Conteudo_ctl04_txtBusca'),
+                            btnEl: $('#ctl00_Conteudo_ctl04_btnOK'),
+                            cookie: 'IPI-Extra.com',
+                            tagueamentoServer: 'https://analytics.api-extra.com.br/eventstracking/trackevent/'
+                        });
+                        autocomp.initialize();
+                    })();
+                </script>
+<script type="text/javascript">
+//<![CDATA[
+
+                $(function() {
+                    var categId = (function(){
+                        var rawCategIds = Recommendation.queryStrVal('Filtro');
+                        var rawCategId = _.last(rawCategIds.split('_'));
+                        var categIdSet = !_.isEmpty(rawCategId);                        
+                        console.log('rawCategId: ' + (categIdSet ? rawCategId : '_'));
+                        if (!categIdSet || rawCategId[0] != 'C') return 0;           
+                        var categId = parseInt(rawCategId.substring(1));
+                        return categId;
+                    })();
+
+                    var lpdSkuIds = _(Recommendation.queryStrVal('lpd').split(','))
+				        .chain()
+				        .map(function (x) { return x.trim(); })
+				        .filter(function (x) { return x !== ''; })
+				        .map(function (x) { return parseInt(x); })
+				        .value();
+
+                    console.log('lpdSkuIds: ' + lpdSkuIds);
+
+                    if (categId == 0 && _.isEmpty(lpdSkuIds)) return;
+            
+                    var recByCategComp = new Recommendation.RecommendationByCategoryComponent({
+                        refCategId: categId,
+                        lpdSkuIds: lpdSkuIds,
+                        targetEl: $('#RecomendacaoPorCategoria'),
+                        settings: {
+                            tenantName: 'extra',
+                            recomServer: 'https://rec.extra.com.br/recommender',
+                            imageServer: 'https://www.extra-imagens.com.br',
+                            detailsPage: 'https://produto.extra.com.br'
+                        },
+                        recomsAjax: new Recommendation.RecommendationsAjax({ server: 'https://rec.extra.com.br/recommender' }),
+                        productDetailsAjax: new Recommendation.ProductDetailsAjax({ server: 'https://rec.extra.com.br/productdetails' }),
+                        livePriceAjax: new Recommendation.LivePriceAjax({ server: 'https://preco.api-extra.com.br/V1/' })
+                    });
+                    recByCategComp.update();
+                });
+            updatePanelJQuery('ctl00_TopBar_TopBar_divMenuWelcome','/Control/TopBar_Saudacao.aspx');//]]>
+</script>
+</form>
+    
+    
+    
+
+    
+    
+    
+</body>
+</html>

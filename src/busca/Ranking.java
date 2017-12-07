@@ -97,12 +97,14 @@ public class Ranking {
     }
 
     public static double kendal(List<Pair> l1, List<Pair> l2) {
+    	print(l1.size() + " " + l2.size());
         List <Pair2> list = new ArrayList<Pair2>();
         int pares = 0;
         for (int i=0; i<l1.size()-1; i++) {
             for (int j=i+1;j<l1.size(); j++) {
                 list.add(new Pair2(l1.get(i), l2.get(j)));
                 pares++;
+                System.out.println(l1.get(i) + ", " + l2.get(j));
             }
         }
         int concordantes = 0, discordantes = 0;
@@ -116,7 +118,7 @@ public class Ranking {
                 }
             }
         }
-        return 1.0 - ((double)2*discordantes/(double)pares);
+        return 1.0 - (double)((2.0*discordantes)/pares);
 
     }
 
@@ -129,8 +131,9 @@ public class Ranking {
         return r;
     }
 
-    public String kendallToString(String query, String query2) {
-        return kendal(search(query), search(query2)) + "";
+    public String kendallToString(String query) {
+    	print(kendal(search(query, false), search(query, true)));
+        return kendal(search(query, false), search(query, true)) + "";
     }
 
 
@@ -140,7 +143,7 @@ public class Ranking {
         String query = "notebook processador";
         String query2 = query + " usados";
         print(r.searchToString(query2, false));
-        print(r.kendallToString(query, query2));
+        print(r.kendal(r.search(query, true), r.search(query, true)) + "");
     }
 
 
@@ -196,7 +199,7 @@ class Pair2 {
         /** Dado um Pair2 e uma Lista, diz se ele existe nela */
         for (int i=0; i<l.size(); i++) {
             Pair2 t = l.get(i);
-            if ((t.p1.doc == r.p1.doc) && (t.p2.doc == r.p2.doc)) {
+            if ((t.p1.doc.equals(r.p1.doc)) && (t.p2.doc.equals(r.p2.doc))) {
                 return true;
             }
         }
