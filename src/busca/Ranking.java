@@ -83,10 +83,10 @@ public class Ranking {
         Collections.sort(r, new Comparator<Pair>() {
             public int compare(Pair one, Pair two) {
                 if (one.value == two.value) { //deixando por ordem de numeracao dos documentos
-                    // String o = ext(one.doc, "(.*?)[.]");
-                    // String t = ext(two.doc, "(.*?)[.]");
-                    // return Integer.parseInt(o) > Integer.parseInt(t) ? 1 : -1;
-                    return 0;
+                     String o = ext(one.doc, "([0-9]*)");
+                     String t = ext(two.doc, "([0-9]*)");
+                     return Integer.parseInt(o) > Integer.parseInt(t) ? 1 : -1;
+//                    return 0;
                 }
                 if (one.value > two.value) return -1;
                 return 1;
@@ -117,6 +117,9 @@ public class Ranking {
                     discordantes++;
                 }
             }
+        }
+        if (pares == 0) {
+        	return 1;
         }
         return 1.0 - (double)((2.0*discordantes)/pares);
 

@@ -16,6 +16,10 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ChangeEvent;
 
 public class GUI {
 	private ArquivoInvertido a = new ArquivoInvertido();
@@ -53,30 +57,35 @@ public class GUI {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	
 	private void initialize() {
 		frmNotebooksSearch = new JFrame();
 		frmNotebooksSearch.setTitle("Notebooks Search");
-		frmNotebooksSearch.setBounds(100, 100, 450, 300);
+		frmNotebooksSearch.setBounds(100, 100, 607, 439);
 		frmNotebooksSearch.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmNotebooksSearch.getContentPane().setLayout(null);
 		
+		JLabel lblOu = new JLabel("OU");
+		lblOu.setBounds(88, 267, 57, 15);
+		frmNotebooksSearch.getContentPane().add(lblOu);
+		
 		JLabel lblNewLabel = new JLabel("search");
-		lblNewLabel.setBounds(12, 226, 57, 15);
+		lblNewLabel.setBounds(12, 296, 57, 15);
 		frmNotebooksSearch.getContentPane().add(lblNewLabel);
 		
 		searchTextField = new JFormattedTextField();
-		searchTextField.setBounds(79, 224, 145, 19);
+		searchTextField.setBounds(79, 294, 145, 19);
 		frmNotebooksSearch.getContentPane().add(searchTextField);
 		
 		soBox = new JComboBox();
-		soBox.setBounds(116, 71, 93, 24);
+		soBox.setBounds(116, 86, 93, 24);
 		soBox.addItem("-");
 		soBox.addItem("Windows");
 		soBox.addItem("Ubuntu");
 		frmNotebooksSearch.getContentPane().add(soBox);
 		
 		JComboBox polegadasBox = new JComboBox();
-		polegadasBox.setBounds(116, 150, 93, 24);
+		polegadasBox.setBounds(116, 185, 93, 24);
 		polegadasBox.addItem("-");
 		polegadasBox.addItem("13.3\"");
 		polegadasBox.addItem("14\"");
@@ -85,7 +94,7 @@ public class GUI {
 		frmNotebooksSearch.getContentPane().add(polegadasBox);
 		
 		JComboBox hdBox = new JComboBox();
-		hdBox.setBounds(116, 107, 93, 24);
+		hdBox.setBounds(116, 133, 93, 24);
 		hdBox.addItem("-");
 		hdBox.addItem("500GB");
 		hdBox.addItem("512GB");
@@ -94,15 +103,15 @@ public class GUI {
 		frmNotebooksSearch.getContentPane().add(hdBox);
 		
 		processadorTextField_1 = new JFormattedTextField();
-		processadorTextField_1.setBounds(116, 34, 145, 19);
+		processadorTextField_1.setBounds(116, 39, 145, 19);
 		frmNotebooksSearch.getContentPane().add(processadorTextField_1);
 		
 		JLabel lblProcessador = new JLabel("Processador");
-		lblProcessador.setBounds(12, 36, 89, 15);
+		lblProcessador.setBounds(12, 41, 89, 15);
 		frmNotebooksSearch.getContentPane().add(lblProcessador);
 		
 		JLabel lblSo = new JLabel("SO");
-		lblSo.setBounds(12, 76, 89, 15);
+		lblSo.setBounds(12, 91, 89, 15);
 		frmNotebooksSearch.getContentPane().add(lblSo);
 		
 		JLabel lblMarca = new JLabel("Marca");
@@ -110,7 +119,7 @@ public class GUI {
 		frmNotebooksSearch.getContentPane().add(lblMarca);
 		
 		JLabel lblHd = new JLabel("HD");
-		lblHd.setBounds(12, 112, 89, 15);
+		lblHd.setBounds(12, 138, 89, 15);
 		frmNotebooksSearch.getContentPane().add(lblHd);
 		
 		marcaTextField_2 = new JFormattedTextField();
@@ -118,7 +127,7 @@ public class GUI {
 		frmNotebooksSearch.getContentPane().add(marcaTextField_2);
 		
 		JLabel lblPolegadas = new JLabel("Display");
-		lblPolegadas.setBounds(12, 155, 89, 15);
+		lblPolegadas.setBounds(12, 190, 89, 15);
 		frmNotebooksSearch.getContentPane().add(lblPolegadas);
 		
 		JButton btnGo = new JButton("Go!");
@@ -158,11 +167,11 @@ public class GUI {
 				textArea.setText(string);
 			}
 		});
-		btnGo.setBounds(330, 221, 84, 25);
+		btnGo.setBounds(170, 324, 84, 25);
 		frmNotebooksSearch.getContentPane().add(btnGo);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(264, 10, 166, 144);
+		scrollPane.setBounds(264, 10, 323, 368);
 		frmNotebooksSearch.getContentPane().add(scrollPane);
 		
 		textArea = new JTextArea();
@@ -170,11 +179,25 @@ public class GUI {
 		scrollPane.setViewportView(textArea);
 		
 		kendalchckbxS = new JCheckBox("kendal");
-		kendalchckbxS.setBounds(8, 195, 82, 23);
+		kendalchckbxS.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent e) {
+				if (kendalchckbxS.isSelected()) {
+					tfidfchckbxTfidf.setSelected(false);
+				}
+			}
+		});
+		kendalchckbxS.setBounds(8, 263, 82, 23);
 		frmNotebooksSearch.getContentPane().add(kendalchckbxS);
 		
 		tfidfchckbxTfidf = new JCheckBox("tfidf");
-		tfidfchckbxTfidf.setBounds(116, 195, 82, 23);
+		tfidfchckbxTfidf.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent arg0) {
+				if (tfidfchckbxTfidf.isSelected()) {
+					kendalchckbxS.setSelected(false);
+				}
+			}
+		});
+		tfidfchckbxTfidf.setBounds(116, 263, 82, 23);
 		frmNotebooksSearch.getContentPane().add(tfidfchckbxTfidf);
 	}
 }
