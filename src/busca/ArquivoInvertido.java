@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
@@ -18,13 +19,13 @@ import java.util.regex.Pattern;
 public class ArquivoInvertido {
 	private static Hashtable arquivo = new Hashtable();
 
-	public ArquivoInvertido() throws FileNotFoundException, IOException {
+	public ArquivoInvertido() throws IOException {
 		// tenta ler o arquivo de lista invertida
 		try {
 			File arquivoInvertido = new File("ai");
 			Scanner sc = new Scanner(arquivoInvertido);
 			// ler enquanto tiver linha (cada linha representa uma lista de
-			// documentos/frequancia separados por espa�o que contem o termo
+			// documentos/frequancia separados por espaço que contem o termo
 			// que
 			// aparece como 1 elemento da linha)
 			while (sc.hasNext()) {
@@ -59,11 +60,16 @@ public class ArquivoInvertido {
 			// caso o arquivo nao exista busca criar o arquivo
 		} catch (FileNotFoundException e) {
 			String listaArquivos[];
-			// substituir a pasta Pagclean
+
 			listaArquivos = new File("Pagclean").list();
+			try {
 				bancoPalavras(listaArquivos);
 				gerarAttrEsp(listaArquivos);
 				salvar();
+			} catch (FileNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 	}
 
@@ -74,7 +80,7 @@ public class ArquivoInvertido {
 				File arquivoInvertido = new File("ai");
 				Scanner sc = new Scanner(arquivoInvertido);
 				// ler enquanto tiver linha (cada linha representa uma lista de
-				// documentos/frequancia separados por espa�o que contem o termo
+				// documentos/frequancia separados por espaço que contem o termo
 				// que
 				// aparece como 1 elemento da linha)
 				while (sc.hasNext()) {
@@ -113,7 +119,7 @@ public class ArquivoInvertido {
 				listaArquivos = new File("Pagclean").list();
 				try {
 					bancoPalavras(listaArquivos);
-					//gerarAttrEsp(listaArquivos);
+					gerarAttrEsp(listaArquivos);
 					salvar();
 				} catch (FileNotFoundException e1) {
 					// TODO Auto-generated catch block
@@ -167,24 +173,20 @@ public class ArquivoInvertido {
 				// substituir a pasta Pagclean
 				listaArquivos = new File("Pagclean").list();
 				try {
+					//nessessario ordenar o array por causa da medicao de distancias
+					//solucao deselegante mas funciona
+					int []  auxx = new int[listaArquivos.length];
+					for(int k = 0; k<listaArquivos.length; k++){
+						String a [] = listaArquivos[k].split("\\.");
+						auxx[k] = Integer.parseInt(a[0]);
+					}
+					Arrays.sort(auxx);
+					for(int k = 0; k<listaArquivos.length; k++)listaArquivos[k] = auxx[k] + ".txt.clean";
+
 					bancoPalavrasByte(listaArquivos);//
-					//
-					//
-					//
-					//
-					//
-					//
-					///
-					//
-					//
-					//--------------------------------------------ADICIONAR A FUNC DE BYTES
-					//
-					//
-					//
-					///
-					//
-					//
-					gerarAttrEspByte(listaArquivos);
+					
+					//gerarAttrEspByte(listaArquivos);
+					
 					FileWriter fw = new FileWriter("aic");
 					BufferedWriter bw = new BufferedWriter(fw);
 					//File arquivoInvertido = new File("aic");
@@ -224,12 +226,12 @@ public class ArquivoInvertido {
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
-			File temp = new File("Pagclean/" + listaArquivos[i]);
+			File temp = new File("Pagclean\\" + listaArquivos[i]);
 			Scanner tempScan = new Scanner(temp, "UTF-8");
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
 			}
-			//System.out.println(st);
+
 			arrayTemp = st.split(" ");
 			for (int ii = 0; ii < arrayTemp.length; ii++) {
 				if (tempHash.containsKey(arrayTemp[ii])) {
@@ -243,7 +245,8 @@ public class ArquivoInvertido {
 			while (s < tempHash.size()) {
 				String key = (String) names.nextElement();
 				int k = (int) tempHash.get(key);
-				int tpp = Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10));
+				String aux[] = listaArquivos[i].split("\\.");
+				int tpp = Integer.parseInt(aux[0]);
 				if (arquivo.containsKey(key)) {
 					Node tempNode = (Node) arquivo.get(key);
 					tempNode.setNext(new Node(tpp, k));
@@ -256,20 +259,18 @@ public class ArquivoInvertido {
 	}
 
 	public static void bancoPalavrasByte(String [] listaArquivos) throws FileNotFoundException{
-		//varre a lista de arquivos, ie todas as Pagclean
+		
+		
 		for (int i = 0; i < listaArquivos.length; i++) {
 			//hastable temporario para salvar as palavras em uma pagina
 			Hashtable tempHash = new Hashtable();
 			String st = "";
 			String arrayTemp[];
-			//apaonta para a pagina salva no arquivo i.txt
 			
 			
-			
-			
-			File temp = new File("Pagclean/" + listaArquivos[i]);
+			File temp = new File("Pagclean\\" + listaArquivos[i]);
 			Scanner tempScan = new Scanner(temp, "UTF-8");
-			//Le toda a pagina salvano as linhas com espa�os
+			//Le toda a pagina salvano as linhas com espaços
 			while (tempScan.hasNext()) {
 				st += tempScan.nextLine() + " ";
 			}
@@ -294,24 +295,11 @@ public class ArquivoInvertido {
 				String key = (String) names.nextElement();
 				int tempFreqa = (int) tempHash.get(key);
 				byte tempFreq = (byte) tempFreqa;
-				//se o hashtable principal j� contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
+				//se o hashtable principal já contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
 				//com as informacoes do hashtable temporario, ie insere no final da lista
 				if (arquivo.containsKey(key)) {
-					
-					
-					
-					
-					
-					
-					
-					int nnd = Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10));
-					
-					
-					
-					
-					
-					
-					
+					String aux[] = listaArquivos[i].split("\\.");
+					int nnd = Integer.parseInt(aux[0]);
 					Node tempNode = (Node) arquivo.get(key);
 					Node tempLast = tempNode.getLast();
 					byte tempDistancia;
@@ -342,14 +330,14 @@ public class ArquivoInvertido {
 			tempNode.setNext(new Node(numDoc, freq));
 			//salva de volta na hashtable
 			arquivo.put(key, tempNode);
-		//caso n�o exista na hashtable cria um head novo
+		//caso não exista na hashtable cria um head novo
 		} else
 			arquivo.put(key, new Node(key, numDoc, freq));
 	}
 	
 	private void salvarHashByte(String key, int numDoc, int freq){
 		byte tempFreq = (byte) freq;
-		//se o hashtable principal j� contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
+		//se o hashtable principal já contem a key, pega o head da lista salva por essa key e chama o setNext com um novo node
 		//com as informacoes do hashtable temporario, ie insere no final da lista
 		if (arquivo.containsKey(key)) {
 			Node tempNode = (Node) arquivo.get(key);
@@ -396,181 +384,152 @@ public class ArquivoInvertido {
 		Pattern polTela;
 		for (int i = 0; i < listaArquivos.length; i++) {
 			String st = "";
-			System.out.println(listaArquivos[i]);
+			String arrayTemp []= listaArquivos[i].split("\\.");
 			String temp;
-			//System.out.println(Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)));
-		
-			InputStreamReader fr = new InputStreamReader(new FileInputStream("Pag/" + listaArquivos[i].substring(0, listaArquivos[i].length()-6)), "UTF-8");
+			
+			InputStreamReader fr = new InputStreamReader(new FileInputStream("Pag\\" + arrayTemp[0]+ ".txt"), "UTF-8");
 			BufferedReader br = new BufferedReader(fr);
 			while ((temp = br.readLine()) != null) {
 				st += ("\n" + temp);
 			}
-			//System.out.println(st + "\n\n");
-
-			if (st.contains("carrefour")) {
-				System.out.println("entrou carrefour");
-				marca = Pattern.compile("Marca</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
-				sisOP = Pattern.compile("Sistema operacional</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
-				proc = Pattern.compile("Processador</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
-				hd = Pattern.compile("HD</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
-				polTela = Pattern.compile("Tamanho da Tela</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
-			} else if (st.contains("americanas")) {
-				System.out.println("entrou americanas");
-				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>(.*?)<");
-			} else if (st.contains("casasbahia")) {
-				System.out.println("entrou casasbahia");
-				proc = Pattern.compile("class=\"Processador\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\\�\\�]+)\\s<");
-				marca = Pattern.compile("class=\"contatoFornecedor\">\\s*<h3 class=\"tit\">Contato ([a-zA-z0-9\\-\\s]+)\\s<");
-				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				hd = Pattern.compile("class=\"Disco r�gido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
 			
-			
-			
-			
-			
-			} else if (st.contains("pontofrio")) {
+			if (st.contains("pontofrio")) {
 				
-				
-				
-				//System.out.println("entrou pontofrio");
 				proc = Pattern.compile("Processador\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s* *<");
 				marca = Pattern.compile("<h3 class=\"tit\">Contato (.*?)<");
 				sisOP = Pattern.compile("Sistema operacional\\s* *</dt>\\s* *<dd>\\s *(.*?)\\s* *<");
 				hd = Pattern.compile("Disco r.gido [(]HD[)]\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
 				polTela = Pattern.compile("Tamanho da tela\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+			
+			} else if (st.contains("americanas")) {
+
+				marca = Pattern.compile("Marca</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				proc = Pattern.compile("Processador</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s* *<td> *(.*?)<");
+			
+			
+			
+			} else if (st.contains("carrefour")) {
+
+				marca = Pattern.compile("Marca</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *([a-zA-z0-9\\-]+)\\s* *&nbsp;<");
+				sisOP = Pattern.compile("Sistema operacional</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
+				proc = Pattern.compile("Processador</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
+				hd = Pattern.compile("HD</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *([a-zA-z0-9\\-]+)\\s **&nbsp;<");
+				polTela = Pattern.compile("Tamanho da Tela</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
 				
-				
-			
-			
-			
-			
-			
-			
-			
-			
 			
 			}else if(st.contains("extra.com")){
 				
-				System.out.println("entrou extra");
-				
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Detalhes do produto: (.*?):");
 	            polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 	            sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 	            proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+			
 			}else if(st.contains("kabum")){
-				
-				System.out.println("entrou kabum");
 				
 				polTela = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
 	            sisOP = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
 	            proc = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-	            hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-	            
-	            
+	            hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs"); 
 				marca = Pattern.compile("<title>KaBuM! - .*?(?: Gamer|) (.*?) ");
+				
+			} else if (st.contains("casasbahia")) {
+
+				proc = Pattern.compile("Processador\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s* *<");
+				marca = Pattern.compile("<h3 class=\"tit\">Contato (.*?)<");
+				sisOP = Pattern.compile("Sistema operacional\\s* *</dt>\\s* *<dd>\\s *(.*?)\\s* *<");
+				hd = Pattern.compile("Disco r.gido [(]HD[)]\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+				polTela = Pattern.compile("Tamanho da tela\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+			
 			}else if(st.contains("dell.com/br/")){
 			
-				System.out.println("entrou dell");
-				
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Dell");
 				polTela = Pattern.compile("Tela<.*?>Tela .*? de (.*?) polegadas .*?</span>");
 				sisOP = Pattern.compile("Sistema operacional<.*?<span.*?>(.*?)</span>");
 				proc = Pattern.compile("Processador<.*?<span.*?>(.*?)</span>");
+			
 			}else if(st.contains("domain = 'lojahp.com.br'")){
 			
-				System.out.println("entrou hp");
-				
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Notebook ([^\\s]*?) (.*?) com Processado");
 				polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 				sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 				proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+			
+			}else {
+
+				proc = Pattern.compile("Processador</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				marca = Pattern.compile("Marca</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s* *<td> *([0-9\\.\"]+).*");
+			
 			}
-			
-			
-			 else {
-				
-				 System.out.println("entrou else");
-				 
-				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>([0-9\\.\"]+).*");
-			}
-			
-			
+			String aux[] = listaArquivos[i].split("\\.");
 			Matcher matcher;
 			matcher = proc.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				System.out.println(codigoDoUsuario);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				
 				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
 				String b = "";
 				for(int k =0; k<aaaaaaaaaaaaaa.length; k++) b+=aaaaaaaaaaaaaa[k];
 				//se ja existir no hastable
-				salvarHash("processador." + b, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				
+				
+				salvarHash("processador." + b, Integer.parseInt(aux[0]), 1);
 			}
-			
 			
 			matcher = sisOP.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				System.out.println(codigoDoUsuario);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				
 				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
-				salvarHash("sistemaoperacional." + aaaaaaaaaaaaaa[0], Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				
+				salvarHash("sistemaoperacional." + aaaaaaaaaaaaaa[0], Integer.parseInt(aux[0]), 1);
 			}
-			
-			
+		
 			matcher = marca.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				System.out.println(codigoDoUsuario);
-
-				salvarHash("marca." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				
+				
+				salvarHash("marca." + codigoDoUsuario, Integer.parseInt(aux[0]), 1);
 			}
-			
 			
 			matcher = hd.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				System.out.println(codigoDoUsuario);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				
 				String aa [] = codigoDoUsuario.split(" ");
 				if(aa[0].charAt(0)==53) {
 					if(aa[0].charAt(aa[0].length()-1)<58) aa[0] += "GB"; 
 				}else {
 					if(aa[0].charAt(aa[0].length()-1)<58) aa[0] += "TB";
 				}
-				salvarHash("hd." + aa[0], Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				salvarHash("hd." + aa[0], Integer.parseInt(aux[0]), 1);
 			}
-			
 			
 			matcher = polTela.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				System.out.println(codigoDoUsuario);
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+				
 				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
-				salvarHash("polegadatela." + aaaaaaaaaaaaaa[0], Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				salvarHash("polegadatela." + aaaaaaaaaaaaaa[0], Integer.parseInt(aux[0]), 1);
 			}
 
 		}
@@ -586,149 +545,149 @@ public class ArquivoInvertido {
 		for (int i = 0; i < listaArquivos.length; i++) {
 			String st = "";
 			String temp;
-			System.out.println(listaArquivos[i]);
-			System.out.println(Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)));
-			FileReader fr = new FileReader("Pag/" + listaArquivos[i].substring(0, listaArquivos[i].length()-6));
+			
+			String arrayTemp []= listaArquivos[i].split("\\.");			
+			InputStreamReader fr = new InputStreamReader(new FileInputStream("Pag\\" + arrayTemp[0]+ ".txt"), "UTF-8");
 			BufferedReader br = new BufferedReader(fr);
 			while ((temp = br.readLine()) != null) {
 				st += ("\n" + temp);
 			}
-			//System.out.println(st + "\n\n");
-
-			if (st.contains("carrefour")) {
+			if (st.contains("pontofrio")) {
 				
-				marca = Pattern.compile("Marca</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
-				sisOP = Pattern.compile("Sistema operacional</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
-				proc = Pattern.compile("Processador</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
-				hd = Pattern.compile("HD</p>\\s*</td>\\s*<td>\\s*<p>\\s*([a-zA-z0-9\\-]+)\\s*&nbsp;<");
-				polTela = Pattern.compile("Tamanho da Tela</p>\\s*</td>\\s*<td>\\s*<p>\\s*(.*?)\\s*&nbsp;<");
+				proc = Pattern.compile("Processador\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s* *<");
+				marca = Pattern.compile("<h3 class=\"tit\">Contato (.*?)<");
+				sisOP = Pattern.compile("Sistema operacional\\s* *</dt>\\s* *<dd>\\s *(.*?)\\s* *<");
+				hd = Pattern.compile("Disco r.gido [(]HD[)]\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+				polTela = Pattern.compile("Tamanho da tela\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+			
 			} else if (st.contains("americanas")) {
 
-				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>(.*?)<");
-			} else if (st.contains("casasbahia")) {
+				marca = Pattern.compile("Marca</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				proc = Pattern.compile("Processador</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s* *<td> *(.*?)<");
+			
+			
+			
+			} else if (st.contains("carrefour")) {
 
-				proc = Pattern.compile("class=\"Processador\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\\�\\�]+)\\s<");
-				marca = Pattern.compile("class=\"contatoFornecedor\">\\s*<h3 class=\"tit\">Contato ([a-zA-z0-9\\-\\s]+)\\s<");
-				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				hd = Pattern.compile("class=\"Disco r�gido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
-			} else if (st.contains("pontofrio")) {
-
-				proc = Pattern.compile("class=\"Processador\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\\�\\�]+)\\s<");
-				marca = Pattern.compile("class=\"contatoFornecedor\">\\s*<h3 class=\"tit\">Contato ([a-zA-z0-9\\-\\s]+)\\s<");
-				sisOP = Pattern.compile("class=\"Sistema operacional\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				hd = Pattern.compile("class=\"Disco r�gido (HD)\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s]+)\\s<");
-				polTela = Pattern.compile("class=\"Tamanho da tela\">\\s*<dt>\\s*Processador\\s*</dt>\\s*<dd>([a-zA-z0-9\\-\\s\"\\.\\,]+)\\s<");
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				marca = Pattern.compile("Marca</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *([a-zA-z0-9\\-]+)\\s* *&nbsp;<");
+				sisOP = Pattern.compile("Sistema operacional</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
+				proc = Pattern.compile("Processador</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
+				hd = Pattern.compile("HD</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *([a-zA-z0-9\\-]+)\\s **&nbsp;<");
+				polTela = Pattern.compile("Tamanho da Tela</p>\\s* *</td>\\s* *<td>\\s* *<p>\\s* *(.*?)\\s* *&nbsp;<");
+				
 			
 			}else if(st.contains("extra.com")){
 				
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Detalhes do produto: (.*?):");
 	            polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 	            sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 	            proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
+			
 			}else if(st.contains("kabum")){
 				
 				polTela = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
 	            sisOP = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
 	            proc = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-	            hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-	            
-	            
+	            hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs"); 
 				marca = Pattern.compile("<title>KaBuM! - .*?(?: Gamer|) (.*?) ");
+				
+			} else if (st.contains("casasbahia")) {
+
+				proc = Pattern.compile("Processador\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s* *<");
+				marca = Pattern.compile("<h3 class=\"tit\">Contato (.*?)<");
+				sisOP = Pattern.compile("Sistema operacional\\s* *</dt>\\s* *<dd>\\s *(.*?)\\s* *<");
+				hd = Pattern.compile("Disco r.gido [(]HD[)]\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+				polTela = Pattern.compile("Tamanho da tela\\s* *</dt>\\s* *<dd>\\s* *(.*?)\\s *<");
+			
 			}else if(st.contains("dell.com/br/")){
 			
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Dell");
 				polTela = Pattern.compile("Tela<.*?>Tela .*? de (.*?) polegadas .*?</span>");
 				sisOP = Pattern.compile("Sistema operacional<.*?<span.*?>(.*?)</span>");
 				proc = Pattern.compile("Processador<.*?<span.*?>(.*?)</span>");
+			
 			}else if(st.contains("domain = 'lojahp.com.br'")){
 			
 				hd = Pattern.compile("sebt4df5vfd54bv5df4b54df54b5d4b864sd4sd86v4s4as64f4sd4c84sac4cx4bdf4b4b4d4bv4f4v8v4v4v4sv44vs");
-				
 				marca = Pattern.compile("Notebook ([^\\s]*?) (.*?) com Processado");
 				polTela = Pattern.compile("<dt>\\s*Tamanho da tela\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 				sisOP = Pattern.compile("<dt>\\s*Sistema operacional\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
 				proc = Pattern.compile("<dt>\\s*Processador\\s*</dt>\\s*<dd>\\s*(.*?)\\s*</dd>");
-			}
 			
-			
-			 else {
+			}else {
 
-				proc = Pattern.compile("Processador</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				marca = Pattern.compile("Marca</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				sisOP = Pattern.compile("Sistema Operacional</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				hd = Pattern.compile("HD</td>\\s*<td>([a-zA-z0-9\\-\\s]+)<");
-				polTela = Pattern.compile("Polegadas da Tela</td>\\s*<td>([0-9\\.\"]+).*");
+				proc = Pattern.compile("Processador</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				marca = Pattern.compile("Marca</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				sisOP = Pattern.compile("Sistema Operacional</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				hd = Pattern.compile("HD</td>\\s* *<td> *([a-zA-z0-9\\-\\s]+)<");
+				polTela = Pattern.compile("Polegadas da Tela</td>\\s* *<td> *([0-9\\.\"]+).*");
+			
 			}
-			
-			
+			String aux[] = listaArquivos[i].split("\\.");
 			Matcher matcher;
 			matcher = proc.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
-				
-				//se ja existir no hastable
-				salvarHashByte("processador." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
-			}
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
 			
+				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
+				String b = "";
+				for(int k =0; k<aaaaaaaaaaaaaa.length; k++) b+=aaaaaaaaaaaaaa[k];
+				//se ja existir no hastable
+				
+				
+				salvarHashByte("processador." + b, Integer.parseInt(aux[0]), 1);
+			}
 			
 			matcher = sisOP.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
+			
+				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
 				
-				salvarHashByte("sistemaoperacional." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				salvarHashByte("sistemaoperacional." + aaaaaaaaaaaaaa[0], Integer.parseInt(aux[0]), 1);
 			}
-			
-			
+		
 			matcher = marca.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
 				
-				salvarHashByte("marca." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				salvarHashByte("marca." + codigoDoUsuario, Integer.parseInt(aux[0]), 1);
 			}
-			
 			
 			matcher = hd.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
 			
-				salvarHashByte("hd." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				String aa [] = codigoDoUsuario.split(" ");
+				if(aa[0].charAt(0)==53) {
+					if(aa[0].charAt(aa[0].length()-1)<58) aa[0] += "GB"; 
+				}else {
+					if(aa[0].charAt(aa[0].length()-1)<58) aa[0] += "TB";
+				}
+				salvarHashByte("hd." + aa[0], Integer.parseInt(aux[0]), 1);
 			}
-			
 			
 			matcher = polTela.matcher(st);
 			if (matcher.find() && matcher.groupCount() == 1) {
 				//salva o valor do campo
 				String codigoDoUsuario = matcher.group(1);
-				//pega o numero do arquivo (ainda em string) na posi��o 0 do array
+				//pega o numero do arquivo (ainda em string) na posição 0 do array
 				
-				salvarHashByte("polegadatela." + codigoDoUsuario, Integer.parseInt(listaArquivos[i].substring(0, listaArquivos[i].length()-10)), 1);
+				String aaaaaaaaaaaaaa [] = codigoDoUsuario.split(" ");
+				salvarHashByte("polegadatela." + aaaaaaaaaaaaaa[0], Integer.parseInt(aux[0]), 1);
 			}
 
 		}
